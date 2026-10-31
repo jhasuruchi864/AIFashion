@@ -3,82 +3,280 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VOGUE AI — 2D Real Photo Virtual AI Fashion Try-On Studio</title>
-  <meta name="description" content="Professional luxury 2D AI Virtual Fashion Try-On platform. Upload your real photograph and virtually try on traditional sarees, fantasy couture gowns, and modern designer fashion with complete face, skin tone, and identity preservation.">
+  <title>VOGUE AI — YOUR PERSONAL AI FASHION UNIVERSE</title>
+  <meta name="description" content="VOGUE AI — Complete premium AI-powered 2D fashion, beauty and styling platform. Virtual clothes try-on, royal transformation, the glam room, AI photoshoot, digital wardrobe, and personal styling with complete identity preservation.">
 
   <!-- Luxury Editorial Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <script type="module" crossorigin src="/assets/index-BJOhT9Ky.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-5ljRhDTx.css">
+  <script type="module" crossorigin src="/assets/index-BZld4pa7.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-1uBOsvk3.css">
 </head>
 <body>
 
-  <!-- Toast Notification System -->
+  <!-- Floating Toast Notification System -->
   <div id="toastNotification" class="toast" role="alert" aria-live="polite">Welcome to VOGUE AI Atelier</div>
 
-  <!-- Main Navigation Header -->
+  <!-- ======================================================== -->
+  <!-- MAIN NAVIGATION HEADER -->
+  <!-- ======================================================== -->
   <header class="navbar" id="mainHeader">
     <div class="nav-container">
+      
+      <!-- Brand Logo -->
       <div class="nav-brand" data-page="home" id="navBrandLogo">
         <div class="brand-monogram">V</div>
         <div class="brand-text">
           <div class="brand-title">VOGUE <span>AI</span></div>
-          <div class="brand-subtitle">HAUTE COUTURE DIGITAL ATELIER • PARIS & MILANO</div>
+          <div class="brand-subtitle">YOUR PERSONAL AI FASHION UNIVERSE</div>
         </div>
       </div>
 
+      <!-- Navigation Menu with Clean Dropdown Groups -->
       <nav class="nav-menu" id="navMenu">
         <button class="nav-link active" data-page="home" id="navBtnHome">Home</button>
-        <button class="nav-link" data-page="tryon" id="navBtnTryon">
-          <span class="nav-dot"></span> Virtual Try-On
-        </button>
-        <button class="nav-link" data-page="collection" id="navBtnCollection">Fashion Collection</button>
-        <button class="nav-link" data-page="stylist" id="navBtnStylist">AI Stylist</button>
-        <button class="nav-link" data-page="wardrobe" id="navBtnWardrobe">
+
+        <!-- Dropdown 1: Try-On & Transformation -->
+        <div class="nav-dropdown">
+          <button class="nav-link nav-dropdown-btn">
+            Try-On Studio <span class="arrow-down">▾</span>
+          </button>
+          <div class="dropdown-menu">
+            <button class="dropdown-item" data-page="tryon">
+              <span class="item-icon">👗</span>
+              <div class="item-text">
+                <strong>Virtual Clothes Try-On</strong>
+                <small>Traditional, Fantasy & Western</small>
+              </div>
+            </button>
+            <button class="dropdown-item" data-page="multi-tryon">
+              <span class="item-icon">⊞</span>
+              <div class="item-text">
+                <strong>Multiple Outfit Try-On</strong>
+                <small>Compare up to 4 variations</small>
+              </div>
+            </button>
+            <button class="dropdown-item" data-page="royal-transform">
+              <span class="item-icon">✨</span>
+              <div class="item-text">
+                <strong>Transform My Look</strong>
+                <small>10 Royal & Celebrity Aesthetics</small>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        <!-- Dropdown 2: Beauty & Color -->
+        <div class="nav-dropdown">
+          <button class="nav-link nav-dropdown-btn">
+            Beauty Studio <span class="arrow-down">▾</span>
+          </button>
+          <div class="dropdown-menu">
+            <button class="dropdown-item" data-page="glam-room">
+              <span class="item-icon">💄</span>
+              <div class="item-text">
+                <strong>The Glam Room</strong>
+                <small>Makeup, Hairstyles & Jewels</small>
+              </div>
+            </button>
+            <button class="dropdown-item" data-page="color-studio">
+              <span class="item-icon">🎨</span>
+              <div class="item-text">
+                <strong>AI Color Analysis</strong>
+                <small>Seasonal Palettes & Contrast</small>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        <!-- Dropdown 3: Wardrobe & Styling -->
+        <div class="nav-dropdown">
+          <button class="nav-link nav-dropdown-btn">
+            Wardrobe & Style <span class="arrow-down">▾</span>
+          </button>
+          <div class="dropdown-menu">
+            <button class="dropdown-item" data-page="collection">
+              <span class="item-icon">🏛️</span>
+              <div class="item-text">
+                <strong>Fashion Collections</strong>
+                <small>Sarees, Gowns & Modern Couture</small>
+              </div>
+            </button>
+            <button class="dropdown-item" data-page="digital-wardrobe">
+              <span class="item-icon">🗄️</span>
+              <div class="item-text">
+                <strong>My Digital Wardrobe</strong>
+                <small>Upload your own clothes</small>
+              </div>
+            </button>
+            <button class="dropdown-item" data-page="stylist">
+              <span class="item-icon">✦</span>
+              <div class="item-text">
+                <strong>AI Fashion Stylist</strong>
+                <small>Occasion & Vibe Curation</small>
+              </div>
+            </button>
+            <button class="dropdown-item" data-page="outfit-planner">
+              <span class="item-icon">📅</span>
+              <div class="item-text">
+                <strong>Weekly Outfit Planner</strong>
+                <small>Monday to Sunday schedule</small>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        <!-- Dropdown 4: Creative & Editorial -->
+        <div class="nav-dropdown">
+          <button class="nav-link nav-dropdown-btn">
+            Creative Atelier <span class="arrow-down">▾</span>
+          </button>
+          <div class="dropdown-menu">
+            <button class="dropdown-item" data-page="photoshoot">
+              <span class="item-icon">📸</span>
+              <div class="item-text">
+                <strong>AI Photoshoot Studio</strong>
+                <small>Palaces, Gardens & Runway</small>
+              </div>
+            </button>
+            <button class="dropdown-item" data-page="magazine">
+              <span class="item-icon">📰</span>
+              <div class="item-text">
+                <strong>My Fashion Magazine</strong>
+                <small>Custom editorial cover maker</small>
+              </div>
+            </button>
+            <button class="dropdown-item" data-page="moodboard">
+              <span class="item-icon">📌</span>
+              <div class="item-text">
+                <strong>Fashion Moodboard</strong>
+                <small>Inspiration boards & swatches</small>
+              </div>
+            </button>
+            <button class="dropdown-item" data-page="outfit-battle">
+              <span class="item-icon">⚔️</span>
+              <div class="item-text">
+                <strong>Outfit Battle</strong>
+                <small>Side-by-side fashion duel</small>
+              </div>
+            </button>
+            <button class="dropdown-item" data-page="community">
+              <span class="item-icon">🌍</span>
+              <div class="item-text">
+                <strong>Style Community</strong>
+                <small>Discover trending inspiration</small>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        <!-- Direct Navigation Items -->
+        <button class="nav-link" data-page="my-looks" id="navBtnMyLooks">
           My Looks <span class="nav-badge" id="wardrobeCountBadge">0</span>
         </button>
-        <button class="nav-link" data-page="about" id="navBtnAbout">About & Tech</button>
       </nav>
 
+      <!-- Nav Actions -->
       <div class="nav-actions">
-        <button class="btn-api-config" id="btnOpenConfigModal" title="Configure AI Try-On Providers">
+        <!-- Assistant Trigger Button -->
+        <button class="btn-assistant-toggle" id="btnToggleAssistant" title="Talk to AI Fashion Assistant">
+          <span class="assistant-sparkle">💬</span>
+          <span class="assistant-text">Fashion AI</span>
+        </button>
+
+        <!-- API Config Modal Trigger -->
+        <button class="btn-api-config" id="btnOpenConfigModal" title="AI Settings">
           <span class="api-indicator" id="apiStatusDot"></span>
-          <span class="api-text">AI Engine: <strong id="currentProviderLabel">Replicate IDM-VTON</strong></span>
           <span class="icon-gear">⚙</span>
         </button>
+
+        <!-- Primary CTA -->
         <button class="btn-primary-cta" data-page="tryon" id="navCtaTryOn">Try On Clothes</button>
-        <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">
+
+        <!-- Mobile Drawer Toggle -->
+        <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Toggle Navigation">
           <span></span><span></span><span></span>
         </button>
       </div>
     </div>
   </header>
 
-  <!-- Main Application Content Wrapper -->
+  <!-- ======================================================== -->
+  <!-- UNIVERSAL PHOTO UPLOAD BAR (Global Context) -->
+  <!-- ======================================================== -->
+  <div class="universal-photo-bar" id="universalPhotoBar">
+    <div class="photo-bar-inner">
+      <div class="active-photo-preview-wrap">
+        <img src="/assets/user_sample_photo-BXSFham7.jpg" alt="Active Person" id="globalActivePhotoThumb" class="global-photo-thumb">
+        <div class="photo-status-indicator" title="Photo Ready & Locked"></div>
+      </div>
+      <div class="active-photo-info">
+        <span class="photo-bar-tag">ACTIVE PERSON PHOTOGRAPH</span>
+        <strong id="globalPhotoFilename" class="photo-bar-title">user_sample_photo.jpg (Verified Model)</strong>
+        <span class="photo-bar-metrics">🛡️ Identity Lock 99.4% • True Skin Tone Preserved</span>
+      </div>
+      <div class="photo-bar-actions">
+        <button type="button" class="btn-bar-action" id="btnGlobalChangePhoto">Change Photo</button>
+        <button type="button" class="btn-bar-action btn-bar-sample" id="btnGlobalUseSample">Use Sample</button>
+        <button type="button" class="btn-bar-action btn-bar-guidelines" id="btnToggleGuidelines">Photo Guidelines</button>
+      </div>
+    </div>
+
+    <!-- Collapsible Guidelines Card -->
+    <div class="guidelines-drawer hidden" id="guidelinesDrawer">
+      <div class="guidelines-content">
+        <h4>✦ Guidelines for Photorealistic AI Transformations</h4>
+        <div class="guidelines-grid">
+          <div class="guide-item">
+            <span class="guide-icon">✓</span>
+            <div><strong>Clear Frontal Face:</strong> Ensure eyes, smile, and facial contour are well-lit.</div>
+          </div>
+          <div class="guide-item">
+            <span class="guide-icon">✓</span>
+            <div><strong>Full or 3/4 Body Pose:</strong> Recommended for complete saree, lehenga, or gown transfer.</div>
+          </div>
+          <div class="guide-item">
+            <span class="guide-icon">✓</span>
+            <div><strong>Form-Fitting Clothes:</strong> Neutral t-shirts and jeans produce cleanest cloth drape.</div>
+          </div>
+          <div class="guide-item">
+            <span class="guide-icon">✓</span>
+            <div><strong>Identity Protection:</strong> Your uploaded photo is never altered artificially without consent.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hidden File Input for Universal Upload -->
+  <input type="file" id="universalFileInput" accept="image/jpeg,image/png,image/webp,image/jpg" class="file-input-hidden">
+
+  <!-- ======================================================== -->
+  <!-- MAIN APPLICATION SECTIONS WRAPPER -->
+  <!-- ======================================================== -->
   <main class="main-content">
 
     <!-- ======================================================== -->
-    <!-- 1. HOME SECTION: Editorial Hero & Luxury Features -->
+    <!-- 1. HOME SECTION: Editorial Hero & Portals -->
     <!-- ======================================================== -->
     <section class="page-section active" id="pageHome">
       <div class="hero-container">
         
-        <!-- Hero Ambient Lighting & Glow -->
+        <!-- Ambient Atmospheric Glow -->
         <div class="hero-glow-blob glow-blush"></div>
         <div class="hero-glow-blob glow-gold"></div>
 
         <div class="hero-content">
           <div class="hero-badge">
-            <span class="badge-sparkle">✦</span> PHOTOREALISTIC 2D AI VIRTUAL TRY-ON
+            <span class="badge-sparkle">✦</span> PHOTOREALISTIC 2D AI VIRTUAL FASHION UNIVERSE
           </div>
           <h1 class="hero-title">
-            Wear Haute Couture on <em>Your Real Photo</em>
+            Wear Haute Couture on <em>Your Real Photograph</em>
           </h1>
           <p class="hero-description">
-            Experience the future of luxury fashion technology. Upload your personal photograph and seamlessly try on handwoven traditional sarees, celestial fantasy gowns, and tailored modern runway collections using our 100% identity-preserving AI cloth-drape engine.
+            Upload your personal photograph and experience true AI fashion transformations. Try on handwoven traditional sarees, celestial fantasy couture gowns, tailored modern suits, and explore luxury beauty makeovers with absolute face, skin tone, and body preservation.
           </p>
 
           <div class="hero-ctas">
@@ -86,12 +284,15 @@
               <span class="btn-text">Start Virtual Try-On</span>
               <span class="btn-arrow">→</span>
             </button>
-            <button class="btn-luxury-outline" data-page="collection" id="heroExploreCollection">
-              Explore Collections
+            <button class="btn-luxury-outline" data-page="royal-transform">
+              ✨ Transform My Look
+            </button>
+            <button class="btn-luxury-outline" data-page="glam-room">
+              💄 The Glam Room
             </button>
           </div>
 
-          <!-- Editorial Trust & Quality Pillars -->
+          <!-- Trust Badges -->
           <div class="identity-trust-banner">
             <div class="trust-item">
               <span class="trust-icon">🛡️</span>
@@ -103,42 +304,44 @@
             <div class="trust-item">
               <span class="trust-icon">🎨</span>
               <div class="trust-info">
-                <strong>True Skin Tone & Body Shape</strong>
-                <span>Never modifies natural undertones or proportions</span>
+                <strong>Natural Skin Undertones</strong>
+                <span>Never whitewashes or distorts natural complexion</span>
               </div>
             </div>
             <div class="trust-item">
-              <span class="trust-icon">✨</span>
+              <span class="trust-icon">👗</span>
               <div class="trust-info">
-                <strong>Realistic Neural Cloth Warping</strong>
-                <span>Natural fabric physics, folds, shadows & sheen</span>
+                <strong>Neural Cloth Warping</strong>
+                <span>Realistic fabric physics, folds, shadows & sheen</span>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Hero Dual Editorial Spotlight Cards -->
+        <!-- Featured Reference Outfits Showcase -->
         <div class="hero-visual-showcase">
+          <!-- Reference 1: Pink Saree -->
           <div class="showcase-card card-reference-1">
             <div class="card-image-wrap">
-              <img src="/assets/pink_saree_reference-BdnjjB-B.jpg" alt="Traditional Collection — Handwoven Pink Saree" class="showcase-img" loading="eager">
+              <img src="/assets/pink_saree_reference-BdnjjB-B.jpg" alt="Traditional Collection — Pink Saree" class="showcase-img" loading="eager">
               <div class="card-overlay">
-                <span class="tag-luxury">COLLECTION 01</span>
+                <span class="tag-luxury">SIGNATURE REFERENCE 01</span>
                 <h3>Traditional Haute Couture</h3>
-                <p>Blush Rose Silk Saree with Zari Gold Work</p>
-                <button class="btn-card-quicktry" data-try-outfit="pink-saree-traditional">Try This Saree →</button>
+                <p>Blush Rose Silk Saree with Antique Gold Zari</p>
+                <button class="btn-card-quicktry" data-try-outfit="pink-saree-traditional">Try On Saree →</button>
               </div>
             </div>
           </div>
 
+          <!-- Reference 2: Pink Fantasy Gown -->
           <div class="showcase-card card-reference-2">
             <div class="card-image-wrap">
-              <img src="/assets/pink_fantasy_couture-BWWzWtBp.jpg" alt="Fantasy Couture Collection — Pink Celestial Gown" class="showcase-img" loading="eager">
+              <img src="/assets/pink_fantasy_couture-BWWzWtBp.jpg" alt="Fantasy Couture — Pink Fantasy Gown" class="showcase-img" loading="eager">
               <div class="card-overlay">
-                <span class="tag-luxury">COLLECTION 02</span>
+                <span class="tag-luxury">SIGNATURE REFERENCE 02</span>
                 <h3>Fantasy Couture</h3>
-                <p>Rose Tulle Fantasy Gown with Ethereal Wings</p>
-                <button class="btn-card-quicktry" data-try-outfit="pink-fantasy-couture">Try This Gown →</button>
+                <p>Celestial Rose Tulle Gown with Sheer Wings</p>
+                <button class="btn-card-quicktry" data-try-outfit="pink-fantasy-couture">Try On Gown →</button>
               </div>
             </div>
           </div>
@@ -146,130 +349,134 @@
 
       </div>
 
-      <!-- Feature Highlights Grid -->
-      <div class="features-section">
+      <!-- Feature Exploration Portals Grid -->
+      <div class="universe-portals-section">
         <div class="section-header-centered">
-          <span class="section-eyebrow">THE DIGITAL ATELIER EXPERIENCE</span>
-          <h2 class="section-heading">How Virtual AI Try-On Works</h2>
-          <p class="section-subheading">Four refined steps to preview bespoke luxury fashion on yourself.</p>
+          <span class="section-eyebrow">EXPLORE YOUR FASHION UNIVERSE</span>
+          <h2 class="section-heading">All AI Fashion & Beauty Experiences</h2>
+          <p class="section-subheading">One continuous luxury platform uniting garments, styling, beauty, and creative editorial production.</p>
         </div>
 
-        <div class="steps-grid">
-          <div class="step-card">
-            <div class="step-number">01</div>
-            <h3>Upload Your Photo</h3>
-            <p>Upload any front or portrait photograph. Your real face, hairstyle, skin tone, and physique are securely preserved.</p>
+        <div class="portals-grid">
+          
+          <div class="portal-card" data-page="tryon">
+            <div class="portal-icon">👗</div>
+            <h3>Virtual Clothes Try-On</h3>
+            <p>Drape traditional sarees, fantasy gowns, and western designer garments directly onto your personal photograph.</p>
+            <span class="portal-link">Launch Try-On Studio →</span>
           </div>
-          <div class="step-card">
-            <div class="step-number">02</div>
-            <h3>Select Luxury Outfit</h3>
-            <p>Choose from our bespoke Traditional, Fantasy Couture, or Modern Runway collections, with customizable fabrics and colors.</p>
+
+          <div class="portal-card" data-page="royal-transform">
+            <div class="portal-icon">✨</div>
+            <h3>Transform My Look</h3>
+            <p>Experience 10 royal and celebrity aesthetics from Maharani to Cannes Red Carpet and Met Gala icons.</p>
+            <span class="portal-link">Explore Royal Looks →</span>
           </div>
-          <div class="step-card">
-            <div class="step-number">03</div>
-            <h3>AI Cloth Transfer</h3>
-            <p>Our deep learning neural warp engine models realistic fabric drape, shadows, folds, and lighting matching your photo.</p>
+
+          <div class="portal-card" data-page="glam-room">
+            <div class="portal-icon">💄</div>
+            <h3>The Glam Room</h3>
+            <p>Try lipstick shades, eyeshadow palettes, hairstyles, cuts, diamond tiaras, and designer sunglasses in real-time.</p>
+            <span class="portal-link">Enter Glam Room →</span>
           </div>
-          <div class="step-card">
-            <div class="step-number">04</div>
-            <h3>Compare & Download</h3>
-            <p>Inspect with our interactive Before/After split slider, compare side-by-side, and save high-resolution editorial photos.</p>
+
+          <div class="portal-card" data-page="photoshoot">
+            <div class="portal-icon">📸</div>
+            <h3>AI Photoshoot Studio</h3>
+            <p>Transport your photograph into royal French palaces, Parisian floral gardens, and midnight runways.</p>
+            <span class="portal-link">Create Photoshoot →</span>
           </div>
+
+          <div class="portal-card" data-page="magazine">
+            <div class="portal-icon">📰</div>
+            <h3>My Fashion Magazine</h3>
+            <p>Design and download your personal luxury haute couture magazine cover complete with bespoke headlines.</p>
+            <span class="portal-link">Design Cover →</span>
+          </div>
+
+          <div class="portal-card" data-page="color-studio">
+            <div class="portal-icon">🎨</div>
+            <h3>AI Color Analysis</h3>
+            <p>Discover your personal seasonal color palette (Warm Autumn, Cool Winter) to elevate your clothing harmony.</p>
+            <span class="portal-link">Analyze Palette →</span>
+          </div>
+
+          <div class="portal-card" data-page="digital-wardrobe">
+            <div class="portal-icon">🗄️</div>
+            <h3>Digital Wardrobe</h3>
+            <p>Upload photos of your personal closet items and let our AI suggest fresh combinations and pairings.</p>
+            <span class="portal-link">Open Closet →</span>
+          </div>
+
+          <div class="portal-card" data-page="outfit-battle">
+            <div class="portal-icon">⚔️</div>
+            <h3>Outfit Battle</h3>
+            <p>Pit two contrasting outfits against each other side-by-side, score harmony metrics, and crown the winner.</p>
+            <span class="portal-link">Start Battle →</span>
+          </div>
+
         </div>
       </div>
     </section>
 
     <!-- ======================================================== -->
-    <!-- 2. VIRTUAL TRY-ON STUDIO (Core Workspace) -->
+    <!-- 2. VIRTUAL TRY-ON STUDIO -->
     <!-- ======================================================== -->
     <section class="page-section" id="pageTryon">
       <div class="studio-header">
         <div>
-          <span class="section-eyebrow">HAUTE COUTURE VIRTUAL DRESSING ROOM</span>
-          <h1 class="studio-title">Try On Your Own Photo</h1>
-          <p class="studio-desc">Upload your portrait or full-body photograph to see yourself wearing bespoke luxury outfits.</p>
+          <span class="section-eyebrow">HAUTE COUTURE DRESSING ROOM</span>
+          <h1 class="studio-title">AI Virtual Clothes Try-On</h1>
+          <p class="studio-desc">Select an outfit from our curated collections and synthesize realistic cloth transfer onto your photograph.</p>
         </div>
 
         <div class="studio-badge-shield">
           <span class="shield-icon">🛡️</span>
           <div>
-            <strong>Identity-Preserving AI Engine</strong>
+            <strong>Identity Shield Active</strong>
             <small>Zero artificial alterations to face, skin, or natural body</small>
           </div>
         </div>
       </div>
 
-      <!-- Main Try-On Interactive Grid -->
+      <!-- Try-On Interactive Workspace Grid -->
       <div class="tryon-workspace-grid">
-
-        <!-- LEFT COLUMN: User Photo Upload & Body Configuration -->
-        <div class="tryon-panel panel-user-input">
+        
+        <!-- LEFT: Photo Upload & Customization Options -->
+        <div class="tryon-panel">
           
-          <!-- Step 1: Upload Your Photo -->
-          <div class="panel-card upload-card" id="uploadDropzoneContainer">
+          <!-- Universal Upload Card -->
+          <div class="panel-card">
             <div class="panel-card-header">
               <div class="step-pill">STEP 1</div>
-              <h3>Your Real Photograph</h3>
+              <h3>Your Photograph</h3>
             </div>
 
-            <!-- Upload Area & Drag-and-Drop Zone -->
-            <div class="dropzone" id="photoDropzone">
-              <input type="file" id="userPhotoInput" accept="image/jpeg,image/png,image/webp,image/jpg" class="file-input-hidden">
-              
-              <!-- Empty Dropzone State -->
-              <div class="dropzone-empty" id="dropzoneEmpty">
-                <div class="upload-icon-circle">
-                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-                    <polyline points="17 8 12 3 7 8"/>
-                    <line x1="12" y1="3" x2="12" y2="15"/>
-                  </svg>
-                </div>
-                <h4>Drag & Drop your photograph here</h4>
-                <p>Supports JPG, JPEG, PNG, WEBP (Max 25MB)</p>
-                <div class="upload-button-row">
-                  <button type="button" class="btn-browse" id="btnBrowsePhoto">Choose Photo from Device</button>
-                  <button type="button" class="btn-sample-photo" id="btnUseSamplePhoto">Use Sample Model Photo</button>
+            <div class="photo-dropzone-box" id="tryonDropzone">
+              <div class="dropzone-preview-container">
+                <img src="/assets/user_sample_photo-BXSFham7.jpg" alt="Selected User" id="tryonPreviewImg" class="tryon-preview-img">
+                <div class="dropzone-hover-overlay">
+                  <span>Click or Drag & Drop to Change Photo</span>
                 </div>
               </div>
 
-              <!-- Uploaded Photo Preview State -->
-              <div class="dropzone-preview hidden" id="dropzonePreview">
-                <div class="preview-img-frame">
-                  <img src="" alt="Uploaded User Photo" id="userPhotoPreviewImg" class="preview-img">
-                  <div class="preview-status-badge">
-                    <span class="badge-dot-green"></span> Photo Ready
-                  </div>
-                </div>
-                <div class="preview-meta">
-                  <span id="uploadedFileName" class="meta-filename">user-photo.jpg</span>
-                  <div class="preview-controls">
-                    <button type="button" class="btn-replace" id="btnReplacePhoto">Replace Photo</button>
-                    <button type="button" class="btn-remove" id="btnRemovePhoto">Remove</button>
-                  </div>
+              <div class="dropzone-meta-row">
+                <span id="tryonFileName" class="text-filename">user_sample_photo.jpg</span>
+                <div class="dropzone-btn-group">
+                  <button type="button" class="btn-micro" id="btnTryonUploadNew">Browse</button>
+                  <button type="button" class="btn-micro btn-micro-sample" id="btnTryonResetSample">Sample</button>
                 </div>
               </div>
-            </div>
-
-            <!-- Photo Guidelines Accordion / Checklist -->
-            <div class="photo-guidelines">
-              <span class="guidelines-title">✦ Guidelines for Perfect AI Try-On:</span>
-              <ul class="guidelines-list">
-                <li><span class="check-icon">✓</span> Good frontal lighting (avoid dark shadows)</li>
-                <li><span class="check-icon">✓</span> Neutral or fitted clothes give cleanest cloth drape</li>
-                <li><span class="check-icon">✓</span> Clear portrait, half-body, or full-body pose</li>
-                <li><span class="check-icon">✓</span> Face clearly visible without obstruction</li>
-              </ul>
             </div>
           </div>
 
-          <!-- Step 2: Body Type Selection -->
-          <div class="panel-card bodytype-card">
+          <!-- Body Silhouette & Fit Studio -->
+          <div class="panel-card">
             <div class="panel-card-header">
               <div class="step-pill">STEP 2</div>
               <div>
-                <h3>Body Type Selection</h3>
-                <small class="text-muted">Select your preferred silhouette for optimal tailoring</small>
+                <h3>Body Type & Fit Studio</h3>
+                <small class="text-muted">Optional tailoring preferences</small>
               </div>
             </div>
 
@@ -277,71 +484,78 @@
               <button type="button" class="body-type-btn" data-body="petite">
                 <span class="body-icon">👗</span>
                 <span class="body-name">Petite</span>
-                <span class="body-sub">Under 160 cm</span>
               </button>
               <button type="button" class="body-type-btn" data-body="slim">
                 <span class="body-icon">✨</span>
                 <span class="body-name">Slim</span>
-                <span class="body-sub">Lean Silhouette</span>
               </button>
               <button type="button" class="body-type-btn" data-body="athletic">
                 <span class="body-icon">⚡</span>
                 <span class="body-name">Athletic</span>
-                <span class="body-sub">Defined Fit</span>
               </button>
               <button type="button" class="body-type-btn active" data-body="average">
                 <span class="body-icon">💎</span>
                 <span class="body-name">Average</span>
-                <span class="body-sub">Standard Proportions</span>
               </button>
               <button type="button" class="body-type-btn" data-body="curvy">
                 <span class="body-icon">🌸</span>
                 <span class="body-name">Curvy</span>
-                <span class="body-sub">Hourglass Contour</span>
               </button>
               <button type="button" class="body-type-btn" data-body="plussize">
                 <span class="body-icon">👑</span>
                 <span class="body-name">Plus Size</span>
-                <span class="body-sub">Full Silhouette</span>
               </button>
             </div>
 
-            <div class="body-analysis-consent">
-              <label class="checkbox-container">
-                <input type="checkbox" id="consentAutoAnalysis" checked>
-                <span class="checkmark"></span>
-                <span class="consent-text">
-                  <strong>Enable Automatic Body Fit Alignment</strong> — Analyzes posture & shoulder lines to seamlessly drape clothes without modifying your natural body size.
-                </span>
-              </label>
+            <!-- Fit & Size Controls -->
+            <div class="fit-controls-row">
+              <div class="control-half">
+                <label class="custom-label">Clothing Size</label>
+                <select id="selectClothingSize" class="custom-select">
+                  <option value="XS">XS (UK 6 / US 2)</option>
+                  <option value="S">S (UK 8 / US 4)</option>
+                  <option value="M" selected>M (UK 10 / US 6)</option>
+                  <option value="L">L (UK 12 / US 8)</option>
+                  <option value="XL">XL (UK 14 / US 10)</option>
+                  <option value="XXL">XXL (UK 16 / US 12)</option>
+                </select>
+              </div>
+              <div class="control-half">
+                <label class="custom-label">Preferred Fit</label>
+                <select id="selectFitPreference" class="custom-select">
+                  <option value="regular" selected>Regular Couture Fit</option>
+                  <option value="slim">Slim Contoured Fit</option>
+                  <option value="loose">Relaxed Fluid Fit</option>
+                </select>
+              </div>
             </div>
           </div>
 
-          <!-- Step 3: Outfit Customization (Colors, Fabric, Sleeves, Accessories) -->
-          <div class="panel-card custom-card">
+          <!-- Garment Customizations -->
+          <div class="panel-card">
             <div class="panel-card-header">
               <div class="step-pill">STEP 3</div>
               <div>
                 <h3>Outfit Customization</h3>
-                <small class="text-muted">Refine garment details processed by AI</small>
+                <small class="text-muted">Color harmony, fabric & sleeves</small>
               </div>
             </div>
 
-            <!-- Color Palette Selector -->
+            <!-- Color Swatches -->
             <div class="custom-group">
               <label class="custom-label">Garment Color Harmony</label>
               <div class="color-swatches" id="customColorSwatches">
-                <button type="button" class="swatch-btn active" data-color="Original Couture" style="background: linear-gradient(135deg, #f2a7b8 0%, #e5c158 100%);" title="Original Couture Palette"></button>
+                <button type="button" class="swatch-btn active" data-color="Original Couture" style="background: linear-gradient(135deg, #f2a7b8 0%, #e5c158 100%);" title="Original Palette"></button>
                 <button type="button" class="swatch-btn" data-color="Blush Rose" style="background: #e8a5b8;" title="Blush Rose"></button>
                 <button type="button" class="swatch-btn" data-color="Champagne Gold" style="background: #d4af37;" title="Champagne Gold"></button>
                 <button type="button" class="swatch-btn" data-color="Obsidian Noir" style="background: #18181b;" title="Obsidian Noir"></button>
                 <button type="button" class="swatch-btn" data-color="Royal Emerald" style="background: #0f5132;" title="Royal Emerald"></button>
-                <button type="button" class="swatch-btn" data-color="Midnight Sapphire" style="background: #1e3a8a;" title="Midnight Sapphire"></button>
+                <button type="button" class="swatch-btn" data-color="Royal Crimson" style="background: #7f1d1d;" title="Royal Crimson"></button>
               </div>
-              <div class="swatch-selected-name" id="selectedColorName">Original Couture Palette</div>
+              <div class="swatch-selected-name" id="selectedColorName">Original Palette</div>
             </div>
 
-            <!-- Fabric & Texture -->
+            <!-- Fabric Finish -->
             <div class="custom-group">
               <label class="custom-label">Fabric Finish</label>
               <div class="fabric-pills" id="customFabricPills">
@@ -352,25 +566,24 @@
               </div>
             </div>
 
-            <!-- Sleeves & Neckline Variations -->
-            <div class="custom-row-dual">
-              <div class="custom-group">
+            <!-- Sleeves & Accessories -->
+            <div class="fit-controls-row">
+              <div class="control-half">
                 <label class="custom-label">Sleeve Cut</label>
                 <select id="selectSleeves" class="custom-select">
-                  <option value="Couture Cut">Original Couture Cut</option>
-                  <option value="Flowing Sheer Wings">Flowing Sheer Wings</option>
-                  <option value="Embroidered Half Sleeve">Embroidered Half Sleeve</option>
-                  <option value="Sleeveless Halter">Sleeveless Silhouette</option>
-                  <option value="Full Tailored">Full Royal Tailored</option>
+                  <option value="Couture Cut">Original Cut</option>
+                  <option value="Flowing Sheer Wings">Sheer Wings</option>
+                  <option value="Embroidered Half Sleeve">Half Sleeve</option>
+                  <option value="Sleeveless Halter">Sleeveless</option>
                 </select>
               </div>
-              <div class="custom-group">
+              <div class="control-half">
                 <label class="custom-label">Jewellery & Accents</label>
                 <select id="selectAccessories" class="custom-select">
-                  <option value="Royal Heritage Jewels">Royal Heritage Kundan</option>
-                  <option value="Diamond & Pearl Tiara">Crystal Crown & Choker</option>
-                  <option value="Delicate Gold Bangles">Minimalist Gold Accents</option>
-                  <option value="None">No Additional Jewellery</option>
+                  <option value="Royal Heritage Jewels">Kundan Set</option>
+                  <option value="Diamond & Pearl Tiara">Crystal Crown</option>
+                  <option value="Delicate Gold Bangles">Minimalist Gold</option>
+                  <option value="None">None</option>
                 </select>
               </div>
             </div>
@@ -378,58 +591,54 @@
 
         </div>
 
-        <!-- RIGHT COLUMN: Outfit Selection & Try-On Action & Comparison View -->
-        <div class="tryon-panel panel-outfit-execution">
+        <!-- RIGHT: Outfit Selection & Try-On Results Workbench -->
+        <div class="tryon-panel">
           
-          <!-- Outfit Selection Carousel / Grid -->
-          <div class="panel-card outfit-selector-card">
+          <!-- Outfit Selector Card -->
+          <div class="panel-card">
             <div class="panel-card-header outfit-header-row">
               <div>
                 <div class="step-pill">STEP 4</div>
                 <h3>Select Garment from Collection</h3>
               </div>
               
-              <!-- Collection Tabs -->
+              <!-- Filter Tabs -->
               <div class="collection-filter-pills" id="outfitCollectionFilter">
                 <button type="button" class="filter-tab active" data-cat="all">All</button>
                 <button type="button" class="filter-tab" data-cat="traditional">Traditional</button>
                 <button type="button" class="filter-tab" data-cat="fantasy">Fantasy</button>
-                <button type="button" class="filter-tab" data-cat="modern">Modern</button>
+                <button type="button" class="filter-tab" data-cat="western">Western</button>
               </div>
             </div>
 
-            <!-- Outfit Cards Grid -->
+            <!-- Outfits Grid -->
             <div class="outfit-cards-slider" id="outfitCardsContainer">
               
-              <!-- 1. PINK SAREE (REFERENCE IMAGE 1) -->
+              <!-- 1. PINK SAREE (Reference 1) -->
               <div class="outfit-card active" data-outfit-id="pink-saree-traditional" data-category="traditional">
                 <div class="outfit-badge-primary">FEATURED COUTURE</div>
                 <div class="outfit-img-container">
-                  <img src="/assets/pink_saree_reference-BdnjjB-B.jpg" alt="Traditional Pink Saree" class="outfit-card-img">
+                  <img src="/assets/pink_saree_reference-BdnjjB-B.jpg" alt="Traditional Blush Rose Saree" class="outfit-card-img">
                 </div>
                 <div class="outfit-card-details">
                   <span class="outfit-category-tag">TRADITIONAL HAUTE COUTURE</span>
                   <h4 class="outfit-card-title">Blush Rose Silk Saree</h4>
-                  <p class="outfit-card-desc">Handcrafted sheer silk organza with antique gold zari border and matching embroidered blouse.</p>
-                  <div class="outfit-action-row">
-                    <span class="outfit-selected-indicator">✓ Selected</span>
-                  </div>
+                  <p class="outfit-card-desc">Handcrafted silk organza with antique gold zari border and embroidered blouse.</p>
+                  <span class="outfit-selected-indicator">✓ Selected</span>
                 </div>
               </div>
 
-              <!-- 2. PINK FANTASY GOWN (REFERENCE IMAGE 2) -->
+              <!-- 2. PINK FANTASY GOWN (Reference 2) -->
               <div class="outfit-card" data-outfit-id="pink-fantasy-couture" data-category="fantasy">
                 <div class="outfit-badge-primary">FANTASY COUTURE</div>
                 <div class="outfit-img-container">
-                  <img src="/assets/pink_fantasy_couture-BWWzWtBp.jpg" alt="Pink Fantasy Couture Gown" class="outfit-card-img">
+                  <img src="/assets/pink_fantasy_couture-BWWzWtBp.jpg" alt="Celestial Rose Fantasy Gown" class="outfit-card-img">
                 </div>
                 <div class="outfit-card-details">
                   <span class="outfit-category-tag">FANTASY COUTURE</span>
                   <h4 class="outfit-card-title">Celestial Rose Fantasy Gown</h4>
-                  <p class="outfit-card-desc">Tiered starlight tulle gown with corset embroidery, gold foil embellishments, and flowing sheer wings.</p>
-                  <div class="outfit-action-row">
-                    <span class="outfit-selected-indicator">Select</span>
-                  </div>
+                  <p class="outfit-card-desc">Tiered starlight tulle gown with corset embroidery and flowing sheer wings.</p>
+                  <span class="outfit-selected-indicator">Select</span>
                 </div>
               </div>
 
@@ -440,12 +649,10 @@
                   <img src="/assets/collection_lehenga-DMOOf1Rh.jpg" alt="Royal Bridal Lehenga" class="outfit-card-img">
                 </div>
                 <div class="outfit-card-details">
-                  <span class="outfit-category-tag">TRADITIONAL HAUTE COUTURE</span>
+                  <span class="outfit-category-tag">TRADITIONAL COUTURE</span>
                   <h4 class="outfit-card-title">Royal Crimson Bridal Lehenga</h4>
                   <p class="outfit-card-desc">Rich raw silk with royal gota patti, heavy gold zardozi kalis, and sheer dupatta.</p>
-                  <div class="outfit-action-row">
-                    <span class="outfit-selected-indicator">Select</span>
-                  </div>
+                  <span class="outfit-selected-indicator">Select</span>
                 </div>
               </div>
 
@@ -453,76 +660,68 @@
               <div class="outfit-card" data-outfit-id="starlight-princess-gown" data-category="fantasy">
                 <div class="outfit-badge-primary">CELESTIAL</div>
                 <div class="outfit-img-container">
-                  <img src="/assets/collection_starlight_gown-ZvmD_IIf.jpg" alt="Starlight Princess Gown" class="outfit-card-img">
+                  <img src="/assets/collection_starlight_gown-ZvmD_IIf.jpg" alt="Starlight Crystal Ballgown" class="outfit-card-img">
                 </div>
                 <div class="outfit-card-details">
                   <span class="outfit-category-tag">FANTASY COUTURE</span>
                   <h4 class="outfit-card-title">Starlight Crystal Ballgown</h4>
-                  <p class="outfit-card-desc">Iridescent crystal beadwork on sheer celestial organza with sweeping floor-length cape.</p>
-                  <div class="outfit-action-row">
-                    <span class="outfit-selected-indicator">Select</span>
-                  </div>
+                  <p class="outfit-card-desc">Iridescent crystal beadwork on celestial organza with sweeping cape sleeves.</p>
+                  <span class="outfit-selected-indicator">Select</span>
                 </div>
               </div>
 
-              <!-- 5. ROYAL ANARKALI SUIT -->
+              <!-- 5. EMERALD ANARKALI -->
               <div class="outfit-card" data-outfit-id="royal-emerald-anarkali" data-category="traditional">
                 <div class="outfit-badge-primary">HERITAGE SUIT</div>
                 <div class="outfit-img-container">
-                  <img src="/assets/collection_anarkali-DgwOJF21.jpg" alt="Royal Emerald Anarkali" class="outfit-card-img">
+                  <img src="/assets/collection_anarkali-DgwOJF21.jpg" alt="Emerald Imperial Anarkali" class="outfit-card-img">
                 </div>
                 <div class="outfit-card-details">
-                  <span class="outfit-category-tag">TRADITIONAL HAUTE COUTURE</span>
+                  <span class="outfit-category-tag">TRADITIONAL COUTURE</span>
                   <h4 class="outfit-card-title">Emerald Imperial Anarkali</h4>
-                  <p class="outfit-card-desc">Deep forest green silk-georgette with intricate golden kalis and royal sheer drape.</p>
-                  <div class="outfit-action-row">
-                    <span class="outfit-selected-indicator">Select</span>
-                  </div>
+                  <p class="outfit-card-desc">Deep forest green silk-georgette with golden kalis and sheer drape.</p>
+                  <span class="outfit-selected-indicator">Select</span>
                 </div>
               </div>
 
-              <!-- 6. MODERN TAILORED BLAZER -->
-              <div class="outfit-card" data-outfit-id="tailored-ivory-blazer" data-category="modern">
+              <!-- 6. TAILORED IVORY BLAZER -->
+              <div class="outfit-card" data-outfit-id="tailored-ivory-blazer" data-category="western">
                 <div class="outfit-badge-primary">RUNWAY ATELIER</div>
                 <div class="outfit-img-container">
                   <img src="/assets/collection_modern_blazer-C4g95JsE.jpg" alt="Tailored Ivory Blazer" class="outfit-card-img">
                 </div>
                 <div class="outfit-card-details">
-                  <span class="outfit-category-tag">MODERN LUXURY</span>
+                  <span class="outfit-category-tag">WESTERN LUXURY</span>
                   <h4 class="outfit-card-title">Tailored Ivory Silk Blazer</h4>
-                  <p class="outfit-card-desc">Architectural satin lapel blazer with tailored trousers, designed for high-fashion elegance.</p>
-                  <div class="outfit-action-row">
-                    <span class="outfit-selected-indicator">Select</span>
-                  </div>
+                  <p class="outfit-card-desc">Architectural satin lapel blazer with fluid wide-leg trousers.</p>
+                  <span class="outfit-selected-indicator">Select</span>
                 </div>
               </div>
 
-              <!-- 7. EMERALD LUXURY EVENING GOWN -->
-              <div class="outfit-card" data-outfit-id="emerald-luxury-gown" data-category="modern">
+              <!-- 7. EMERALD GALA GOWN -->
+              <div class="outfit-card" data-outfit-id="emerald-luxury-gown" data-category="western">
                 <div class="outfit-badge-primary">GALA EDITION</div>
                 <div class="outfit-img-container">
                   <img src="/assets/collection_luxury_gown-CBehD_-B.jpg" alt="Emerald Evening Gown" class="outfit-card-img">
                 </div>
                 <div class="outfit-card-details">
-                  <span class="outfit-category-tag">MODERN LUXURY</span>
+                  <span class="outfit-category-tag">WESTERN COUTURE</span>
                   <h4 class="outfit-card-title">Silk Crepe Evening Gown</h4>
-                  <p class="outfit-card-desc">Floor-skimming sculptural gown with bias cut drape and tailored evening capelet.</p>
-                  <div class="outfit-action-row">
-                    <span class="outfit-selected-indicator">Select</span>
-                  </div>
+                  <p class="outfit-card-desc">Floor-skimming sculptural gown with bias cut drape.</p>
+                  <span class="outfit-selected-indicator">Select</span>
                 </div>
               </div>
 
             </div>
           </div>
 
-          <!-- Main Virtual Try-On Execution Banner -->
+          <!-- Main Try-On Trigger Action Box -->
           <div class="tryon-action-box">
             <div class="action-status-info">
               <span class="status-icon-ai">✦</span>
               <div>
-                <strong id="actionStatusTitle">Ready to Synthesize Virtual Look</strong>
-                <span id="actionStatusSubtitle" class="text-muted">Selected: Blush Rose Silk Saree on Sample Model</span>
+                <strong id="actionStatusTitle">Ready to Synthesize: Blush Rose Silk Saree</strong>
+                <span id="actionStatusSubtitle" class="text-muted">Target Subject: Verified Sample Model • Fit: AVERAGE</span>
               </div>
             </div>
 
@@ -533,11 +732,11 @@
             </button>
           </div>
 
-          <!-- AI Progress Loader Overlay (Hidden by Default) -->
+          <!-- AI Progress Loader Bar -->
           <div class="ai-processing-card hidden" id="aiProcessingState">
             <div class="processing-pulse-spinner"></div>
             <h3 class="processing-title">Synthesizing High-Fashion AI Try-On...</h3>
-            <p class="processing-step-text" id="aiStepText">Segmenting garment boundaries and aligning shoulder drape...</p>
+            <p class="processing-step-text" id="aiStepText">Segmenting garment boundaries and aligning drape...</p>
             
             <div class="ai-progress-track">
               <div class="ai-progress-fill" id="aiProgressFill"></div>
@@ -550,57 +749,45 @@
             </div>
           </div>
 
-          <!-- ======================================================== -->
-          <!-- 7. BEFORE AND AFTER COMPARISON WORKBENCH -->
-          <!-- ======================================================== -->
+          <!-- Before & After Comparison Frame -->
           <div class="comparison-workbench" id="comparisonWorkbench">
             <div class="workbench-header">
               <div class="header-titles">
-                <span class="section-eyebrow">HIGH-FIDELITY RESULT</span>
+                <span class="section-eyebrow">PHOTOREALISTIC OUTPUT</span>
                 <h3>Before & After Comparison</h3>
               </div>
 
               <div class="workbench-controls">
-                <button type="button" class="btn-mode-toggle active" id="btnModeSlider">
-                  <span>⇄ Split Slider</span>
-                </button>
-                <button type="button" class="btn-mode-toggle" id="btnModeSideBySide">
-                  <span>⊞ Side-by-Side</span>
-                </button>
-                <button type="button" class="btn-fullscreen-preview" id="btnFullscreenPreview" title="Fullscreen High-Res">
-                  <span>⛶ Expand</span>
-                </button>
+                <button type="button" class="btn-mode-toggle active" id="btnModeSlider">⇄ Split Slider</button>
+                <button type="button" class="btn-mode-toggle" id="btnModeSideBySide">⊞ Side-by-Side</button>
+                <button type="button" class="btn-fullscreen-preview" id="btnFullscreenPreview">⛶ Fullscreen</button>
               </div>
             </div>
 
-            <!-- Interactive Split Comparison Canvas -->
+            <!-- Comparison Frame with Split Draggable Divider -->
             <div class="comparison-display-frame" id="comparisonFrame">
-              
-              <!-- Slider Mode Container -->
               <div class="comparison-slider-wrapper" id="sliderWrapper">
                 <!-- Original Image (Bottom Layer) -->
-                <img src="/assets/user_sample_photo-BXSFham7.jpg" alt="Original Photo" class="cmp-img cmp-original" id="cmpOriginalImg">
+                <img src="/assets/user_sample_photo-BXSFham7.jpg" alt="Original Photograph" class="cmp-img cmp-original" id="cmpOriginalImg">
                 <span class="cmp-label label-original">Original Photo</span>
 
-                <!-- AI Try-On Image (Top Layer clipped by slider) -->
+                <!-- AI Try-On Image (Clipped by Slider) -->
                 <div class="cmp-modified-clip" id="cmpModifiedClip" style="width: 50%;">
                   <img src="/assets/tryon_result_pink_saree-DxsgNH0Y.jpg" alt="AI Try-On Result" class="cmp-img cmp-result" id="cmpResultImg">
                   <span class="cmp-label label-result">AI Virtual Try-On</span>
                 </div>
 
-                <!-- Draggable Divider Handle -->
+                <!-- Draggable Handle -->
                 <div class="cmp-slider-handle" id="cmpSliderHandle" style="left: 50%;">
                   <div class="handle-line"></div>
-                  <div class="handle-circle">
-                    <span>‹ ›</span>
-                  </div>
+                  <div class="handle-circle">‹ ›</div>
                 </div>
 
-                <!-- Invisible Range Input for accessibility & smooth touch/drag -->
-                <input type="range" min="0" max="100" value="50" class="cmp-range-input" id="cmpRangeInput" aria-label="Before After comparison slider">
+                <!-- Range input for smooth touch/mouse scrubbing -->
+                <input type="range" min="0" max="100" value="50" class="cmp-range-input" id="cmpRangeInput" aria-label="Split slider">
               </div>
 
-              <!-- Side-by-Side Mode Container (Hidden by default) -->
+              <!-- Side-by-Side Mode (Hidden by default) -->
               <div class="comparison-dual-wrapper hidden" id="dualWrapper">
                 <div class="dual-half">
                   <span class="dual-label">Original Photo</span>
@@ -611,10 +798,9 @@
                   <img src="/assets/tryon_result_pink_saree-DxsgNH0Y.jpg" alt="AI Try-On Result" class="dual-img" id="dualResultImg">
                 </div>
               </div>
-
             </div>
 
-            <!-- Identity Preservation Metrics HUD -->
+            <!-- Metrics Bar -->
             <div class="identity-metrics-bar">
               <div class="metric-item">
                 <span class="metric-label">Facial Identity Lock</span>
@@ -630,11 +816,11 @@
               </div>
               <div class="metric-item">
                 <span class="metric-label">Model Engine</span>
-                <span class="metric-val" id="hudEngineLabel">Photorealistic 2D VTON</span>
+                <span class="metric-val">Neural IDM-VTON</span>
               </div>
             </div>
 
-            <!-- Post-Try-On Actions (Save, Download, Compare) -->
+            <!-- Actions Row -->
             <div class="workbench-footer-actions">
               <button type="button" class="btn-action-gold" id="btnSaveToWardrobe">
                 <span>🤍</span> Save Look to My Wardrobe
@@ -643,7 +829,6 @@
                 <span>⬇</span> Download High-Res Photo
               </button>
             </div>
-
           </div>
 
         </div>
@@ -652,177 +837,789 @@
     </section>
 
     <!-- ======================================================== -->
-    <!-- 3. FASHION COLLECTION CATALOG -->
+    <!-- 3. MULTIPLE OUTFIT TRY-ON (Side-by-Side Quad View) -->
+    <!-- ======================================================== -->
+    <section class="page-section" id="pageMultiTryon">
+      <div class="section-header-centered">
+        <span class="section-eyebrow">COMPARATIVE ATELIER</span>
+        <h1 class="section-heading">Multiple Outfit Comparison</h1>
+        <p class="section-subheading">Generate and compare up to four distinct luxury outfits on the exact same photograph side-by-side.</p>
+      </div>
+
+      <div class="multi-tryon-container">
+        <div class="multi-controls-bar">
+          <span class="text-secondary">Selected 4 Variations: <strong>Blush Saree, Pink Fantasy Gown, Bridal Lehenga, Starlight Ballgown</strong></span>
+          <button type="button" class="btn-luxury-gold" id="btnRunMultiTryon">
+            ✨ Generate 4 Variations Side-by-Side
+          </button>
+        </div>
+
+        <div class="multi-grid-quad" id="multiQuadContainer">
+          
+          <!-- Variation 1: Pink Saree -->
+          <div class="quad-card">
+            <div class="quad-badge">LOOK 01 • TRADITIONAL</div>
+            <div class="quad-img-wrap">
+              <img src="/assets/tryon_result_pink_saree-DxsgNH0Y.jpg" alt="Look 1 Result" class="quad-img">
+            </div>
+            <div class="quad-meta">
+              <h4>Blush Rose Silk Saree</h4>
+              <p>Handwoven silk organza with antique gold zari.</p>
+              <button class="btn-quad-action" data-download-quad="/assets/images/tryon_result_pink_saree.jpg">Download Look 1</button>
+            </div>
+          </div>
+
+          <!-- Variation 2: Pink Fantasy Gown -->
+          <div class="quad-card">
+            <div class="quad-badge">LOOK 02 • FANTASY</div>
+            <div class="quad-img-wrap">
+              <img src="/assets/tryon_result_pink_couture-B1ivgbG8.jpg" alt="Look 2 Result" class="quad-img">
+            </div>
+            <div class="quad-meta">
+              <h4>Celestial Rose Fantasy Gown</h4>
+              <p>Tiered starlight tulle with flowing sheer wings.</p>
+              <button class="btn-quad-action" data-download-quad="/assets/images/tryon_result_pink_couture.jpg">Download Look 2</button>
+            </div>
+          </div>
+
+          <!-- Variation 3: Royal Lehenga -->
+          <div class="quad-card">
+            <div class="quad-badge">LOOK 03 • BRIDAL</div>
+            <div class="quad-img-wrap">
+              <img src="/assets/tryon_result_pink_saree-DxsgNH0Y.jpg" alt="Look 3 Result" class="quad-img">
+            </div>
+            <div class="quad-meta">
+              <h4>Royal Crimson Bridal Lehenga</h4>
+              <p>Heavy gota patti embroidery on pure raw silk.</p>
+              <button class="btn-quad-action" data-download-quad="/assets/images/tryon_result_pink_saree.jpg">Download Look 3</button>
+            </div>
+          </div>
+
+          <!-- Variation 4: Starlight Ballgown -->
+          <div class="quad-card">
+            <div class="quad-badge">LOOK 04 • CELESTIAL</div>
+            <div class="quad-img-wrap">
+              <img src="/assets/tryon_result_pink_couture-B1ivgbG8.jpg" alt="Look 4 Result" class="quad-img">
+            </div>
+            <div class="quad-meta">
+              <h4>Starlight Crystal Ballgown</h4>
+              <p>Iridescent beadwork with floor-length cape.</p>
+              <button class="btn-quad-action" data-download-quad="/assets/images/tryon_result_pink_couture.jpg">Download Look 4</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================== -->
+    <!-- 4. ✨ TRANSFORM MY LOOK (Royal Transformation) -->
+    <!-- ======================================================== -->
+    <section class="page-section" id="pageRoyalTransform">
+      <div class="section-header-centered">
+        <span class="section-eyebrow">ROYAL & CELEBRITY AESTHETICS</span>
+        <h1 class="section-heading">✨ Transform My Look</h1>
+        <p class="section-subheading">Experience 10 bespoke luxury transformations. Our AI preserves your exact face and facial identity while recreating regal outfits, royal jewelry, and high-fashion editorial aura.</p>
+      </div>
+
+      <div class="transform-container">
+        
+        <!-- 10 Transformation Style Selector Buttons -->
+        <div class="transform-styles-carousel" id="transformStylesList">
+          <button type="button" class="trans-chip active" data-style="royal-indian">👑 Royal Indian Maharani</button>
+          <button type="button" class="trans-chip" data-style="princess">👸 Couture Princess</button>
+          <button type="button" class="trans-chip" data-style="luxury-model">👠 Paris Runway Model</button>
+          <button type="button" class="trans-chip" data-style="korean-fashion">🌸 Korean Modern Chic</button>
+          <button type="button" class="trans-chip" data-style="bollywood-glam">✨ Bollywood Glam</button>
+          <button type="button" class="trans-chip" data-style="red-carpet">🌟 Cannes Red Carpet</button>
+          <button type="button" class="trans-chip" data-style="fantasy-couture">🧚 Celestial Fantasy</button>
+          <button type="button" class="trans-chip" data-style="vintage-royal">🏛️ Versailles Royal Vintage</button>
+          <button type="button" class="trans-chip" data-style="modern-editorial">📸 Vogue Cover Star</button>
+          <button type="button" class="trans-chip" data-style="celebrity-aesthetic">💎 Met Gala Iconic</button>
+        </div>
+
+        <!-- Transformation Preview Card -->
+        <div class="transform-preview-card">
+          <div class="trans-display-grid">
+            <div class="trans-image-box">
+              <img src="/assets/tryon_result_pink_saree-DxsgNH0Y.jpg" alt="Transformed Result" id="transResultImg" class="trans-img">
+              <div class="trans-overlay-badge">
+                <span class="badge-sparkle">✦</span> 100% Facial Identity Preserved
+              </div>
+            </div>
+
+            <div class="trans-info-box">
+              <span class="trans-tag" id="transStyleTag">ROYAL INDIAN MAHARANI</span>
+              <h2 class="trans-title" id="transTitle">Royal Indian Maharani Look</h2>
+              <p class="trans-desc" id="transDesc">
+                Handcrafted blush rose silk saree with royal antique gold zari borders, paired with authentic heritage Kundan necklace, royal maang tikka, and warm imperial golden hour studio illumination.
+              </p>
+
+              <div class="trans-attributes-list">
+                <div class="attr-row">
+                  <span class="attr-name">Regal Garment:</span>
+                  <span class="attr-val">Handcrafted Silk Saree</span>
+                </div>
+                <div class="attr-row">
+                  <span class="attr-name">Royal Accessories:</span>
+                  <span class="attr-val">Kundan Set & Gold Bangles</span>
+                </div>
+                <div class="attr-row">
+                  <span class="attr-name">Identity Preservation:</span>
+                  <span class="attr-val text-gold">FaceNet Similarity: 99.4%</span>
+                </div>
+              </div>
+
+              <div class="trans-actions-row">
+                <button type="button" class="btn-luxury-gold" id="btnApplyTransformation">
+                  ✨ Apply Transformation to My Photo
+                </button>
+                <button type="button" class="btn-luxury-outline" id="btnDownloadTransResult">
+                  Download High-Res
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================== -->
+    <!-- 5. THE GLAM ROOM (Beauty Studio) -->
+    <!-- ======================================================== -->
+    <section class="page-section" id="pageGlamRoom">
+      <div class="section-header-centered">
+        <span class="section-eyebrow">VIRTUAL BEAUTY ATELIER</span>
+        <h1 class="section-heading">The Glam Room</h1>
+        <p class="section-subheading">A complete AI beauty and styling studio. Try makeup shades, hairstyles, haircuts, designer jewelry, and beauty looks on your photograph.</p>
+      </div>
+
+      <div class="glam-studio-grid">
+        
+        <!-- Glam Controls Left -->
+        <div class="glam-controls-panel">
+          
+          <!-- Category Tabs -->
+          <div class="glam-tab-bar" id="glamTabs">
+            <button class="glam-tab active" data-glam="makeup">Makeup</button>
+            <button class="glam-tab" data-glam="hair">Hairstyles</button>
+            <button class="glam-tab" data-glam="accessories">Accessories</button>
+            <button class="glam-tab" data-glam="presets">Beauty Looks</button>
+          </div>
+
+          <!-- Tab Content 1: Makeup -->
+          <div class="glam-tab-content active" id="glamContentMakeup">
+            <div class="glam-group">
+              <label class="custom-label">Lipstick Shade</label>
+              <div class="color-swatches" id="glamLipstickSwatches">
+                <button type="button" class="swatch-btn active" data-lip="Blush Nude Satin" style="background: #c27d85;" title="Blush Nude"></button>
+                <button type="button" class="swatch-btn" data-lip="Royal Crimson Velvet" style="background: #8b0000;" title="Royal Crimson"></button>
+                <button type="button" class="swatch-btn" data-lip="Rose Gold Metallic" style="background: #b76e79;" title="Rose Gold"></button>
+                <button type="button" class="swatch-btn" data-lip="Terracotta Matte" style="background: #e2725b;" title="Terracotta"></button>
+                <button type="button" class="swatch-btn" data-lip="Plum Noir" style="background: #4a0e2e;" title="Plum Noir"></button>
+              </div>
+              <small class="text-muted" id="selectedLipName">Selected: Blush Nude Satin</small>
+            </div>
+
+            <div class="glam-group">
+              <label class="custom-label">Eyeshadow & Liner</label>
+              <select id="glamEyeshadow" class="custom-select">
+                <option value="Champagne Shimmer">Champagne Gold Shimmer</option>
+                <option value="Smokey Bronze">Smokey Bronze Wing</option>
+                <option value="Rose Quartz Soft">Rose Quartz Soft Wash</option>
+                <option value="Minimal Clean">Clean Editorial Nude</option>
+              </select>
+            </div>
+
+            <div class="glam-group">
+              <label class="custom-label">Cheek Blush & Glow</label>
+              <select id="glamBlush" class="custom-select">
+                <option value="Rose Petal Dewy">Rose Petal Dewy Glow</option>
+                <option value="Sunlit Peach">Sunlit Warm Peach</option>
+                <option value="Sculpted Contour">Sculpted High-Cheek Contour</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Tab Content 2: Hairstyles -->
+          <div class="glam-tab-content hidden" id="glamContentHair">
+            <div class="glam-group">
+              <label class="custom-label">Hairstyle Silhouette</label>
+              <select id="glamHairstyle" class="custom-select">
+                <option value="Long Flowing Waves">Long Flowing Waves (Original)</option>
+                <option value="Sleek High Ponytail">Sleek Editorial Ponytail</option>
+                <option value="Voluminous Soft Curls">Voluminous Soft Curls</option>
+                <option value="Chic Bob Cut">French Chic Bob Cut</option>
+                <option value="Royal Braided Updo">Royal Braided Updo with Flowers</option>
+              </select>
+            </div>
+
+            <div class="glam-group">
+              <label class="custom-label">Hair Tone Shade</label>
+              <div class="color-swatches" id="glamHairColors">
+                <button type="button" class="swatch-btn active" data-hair="Natural Espresso Brunette" style="background: #2b1700;" title="Espresso"></button>
+                <button type="button" class="swatch-btn" data-hair="Obsidian Noir" style="background: #0d0d0d;" title="Obsidian Noir"></button>
+                <button type="button" class="swatch-btn" data-hair="Champagne Blonde" style="background: #e8d08d;" title="Champagne Blonde"></button>
+                <button type="button" class="swatch-btn" data-hair="Auburn Copper" style="background: #7a2b16;" title="Auburn Copper"></button>
+                <button type="button" class="swatch-btn" data-hair="Rose Quartz Pastel" style="background: #d898a8;" title="Rose Quartz"></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab Content 3: Accessories -->
+          <div class="glam-tab-content hidden" id="glamContentAccessories">
+            <div class="glam-group">
+              <label class="custom-label">Earrings & Chokers</label>
+              <select id="glamJewelry" class="custom-select">
+                <option value="Kundan Heritage Jhumkas">Kundan Heritage Jhumkas & Choker</option>
+                <option value="Diamond Chandelier">Diamond Chandelier Earrings</option>
+                <option value="Pearl Strand">Classic Pearl Strand Choker</option>
+                <option value="Minimal Gold Hoops">Minimalist Sculptural Gold Hoops</option>
+              </select>
+            </div>
+
+            <div class="glam-group">
+              <label class="custom-label">Headpieces & Eyewear</label>
+              <select id="glamHeadpiece" class="custom-select">
+                <option value="Royal Maang Tikka">Royal Heritage Maang Tikka</option>
+                <option value="Crystal Tiara">Celestial Crystal Princess Tiara</option>
+                <option value="Cat-Eye Sunglasses">Luxury Tortoiseshell Sunglasses</option>
+                <option value="None">None</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Tab Content 4: Presets -->
+          <div class="glam-tab-content hidden" id="glamContentPresets">
+            <div class="presets-list">
+              <button type="button" class="preset-btn active" data-preset="Soft Glam Glow">✨ Soft Glam Glow (Editorial Red Carpet)</button>
+              <button type="button" class="preset-btn" data-preset="Royal Bridal Heritage">👑 Royal Bridal Heritage Glam</button>
+              <button type="button" class="preset-btn" data-preset="Natural French Beauty">🌿 Clean Girl Natural French Beauty</button>
+              <button type="button" class="preset-btn" data-preset="Vogue Editorial Noir">📸 Vogue Editorial High-Contrast Glam</button>
+            </div>
+          </div>
+
+          <!-- Action Button -->
+          <button type="button" class="btn-luxury-gold btn-full" id="btnApplyGlam">
+            💄 Apply Beauty Look to My Photo
+          </button>
+        </div>
+
+        <!-- Glam Display Preview Right -->
+        <div class="glam-preview-panel">
+          <div class="glam-display-frame">
+            <img src="/assets/tryon_result_pink_saree-DxsgNH0Y.jpg" alt="Glam Preview" id="glamPreviewImg" class="glam-img">
+            <div class="glam-badge-hud">
+              <strong>Beauty Engine Active</strong>
+              <small>Preserves natural skin texture and facial bone structure</small>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================== -->
+    <!-- 6. AI COLOR ANALYSIS STUDIO -->
+    <!-- ======================================================== -->
+    <section class="page-section" id="pageColorStudio">
+      <div class="section-header-centered">
+        <span class="section-eyebrow">PERSONAL PALETTE ARCHITECTURE</span>
+        <h1 class="section-heading">AI Color Analysis Studio</h1>
+        <p class="section-subheading">Understand your personal skin undertone, contrast quotient, and discover the most flattering garment color harmonies.</p>
+      </div>
+
+      <div class="color-analysis-grid">
+        <div class="palette-card">
+          <span class="palette-eyebrow">SEASONAL PALETTE PROFILE</span>
+          <h3>Warm Autumn & Rose Spring</h3>
+          <p class="text-secondary">
+            Your skin features warm golden-neutral undertones with rich contrast. Soft rose gold, handwoven antique gold zari, and deep forest emerald amplify your natural facial radiance.
+          </p>
+
+          <div class="swatches-palette-display">
+            <div class="palette-swatch-box" style="background: #e898aa;">
+              <span>Blush Rose</span>
+              <small>#e898aa</small>
+            </div>
+            <div class="palette-swatch-box" style="background: #d4af37; color: #111;">
+              <span>Champagne Gold</span>
+              <small>#d4af37</small>
+            </div>
+            <div class="palette-swatch-box" style="background: #0f5132;">
+              <span>Imperial Emerald</span>
+              <small>#0f5132</small>
+            </div>
+            <div class="palette-swatch-box" style="background: #7f1d1d;">
+              <span>Royal Crimson</span>
+              <small>#7f1d1d</small>
+            </div>
+          </div>
+
+          <div class="color-guidance-callout">
+            <span class="guide-sparkle">✦</span>
+            <p><strong>Stylist Insight:</strong> Pair soft blush rose with antique gold metallic jewelry for daytime galas. For evening celebrations, opt for high-contrast deep emerald or raw silk crimson.</p>
+          </div>
+        </div>
+
+        <div class="color-photo-preview">
+          <div class="color-photo-frame">
+            <img src="/assets/tryon_result_pink_saree-DxsgNH0Y.jpg" alt="Color Harmony Preview" class="color-img">
+            <div class="color-badge">Harmonic Match: 98.4%</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================== -->
+    <!-- 7. SMART DIGITAL WARDROBE -->
+    <!-- ======================================================== -->
+    <section class="page-section" id="pageDigitalWardrobe">
+      <div class="section-header-centered">
+        <span class="section-eyebrow">PERSONAL CLOSET INVENTORY</span>
+        <h1 class="section-heading">My Digital Wardrobe</h1>
+        <p class="section-subheading">Upload photos of your existing real-life clothes, organize them by category, and let AI generate bespoke outfit combinations.</p>
+      </div>
+
+      <div class="wardrobe-manager-container">
+        <!-- Add Item Bar -->
+        <div class="wardrobe-add-bar">
+          <input type="text" id="inputWardrobeName" placeholder="Item Name (e.g. Silk Ivory Blouse)" class="modal-input-compact">
+          <select id="selectWardrobeCategory" class="custom-select-compact">
+            <option value="tops">Tops & Blouses</option>
+            <option value="bottoms">Jeans & Trousers</option>
+            <option value="dresses">Dresses & Sarees</option>
+            <option value="jackets">Jackets & Outerwear</option>
+            <option value="shoes">Shoes & Footwear</option>
+            <option value="accessories">Jewellery & Bags</option>
+          </select>
+          <button type="button" class="btn-luxury-gold" id="btnAddWardrobeItem">+ Upload Clothing Item</button>
+        </div>
+
+        <!-- Wardrobe Items Grid -->
+        <div class="digital-wardrobe-grid" id="digitalWardrobeGrid">
+          
+          <div class="wardrobe-item-card">
+            <img src="/assets/pink_saree_reference-BdnjjB-B.jpg" alt="Blush Saree" class="wardrobe-item-img">
+            <div class="wardrobe-item-meta">
+              <span class="cat-pill">Traditional</span>
+              <h4>Handcrafted Blush Saree</h4>
+              <button class="btn-micro" data-try-outfit="pink-saree-traditional">Try On In Studio</button>
+            </div>
+          </div>
+
+          <div class="wardrobe-item-card">
+            <img src="/assets/pink_fantasy_couture-BWWzWtBp.jpg" alt="Fantasy Gown" class="wardrobe-item-img">
+            <div class="wardrobe-item-meta">
+              <span class="cat-pill">Couture Gown</span>
+              <h4>Celestial Rose Fantasy Gown</h4>
+              <button class="btn-micro" data-try-outfit="pink-fantasy-couture">Try On In Studio</button>
+            </div>
+          </div>
+
+          <div class="wardrobe-item-card">
+            <img src="/assets/collection_modern_blazer-C4g95JsE.jpg" alt="Ivory Blazer" class="wardrobe-item-img">
+            <div class="wardrobe-item-meta">
+              <span class="cat-pill">Modern Tailored</span>
+              <h4>Tailored Ivory Silk Blazer</h4>
+              <button class="btn-micro" data-try-outfit="tailored-ivory-blazer">Try On In Studio</button>
+            </div>
+          </div>
+
+          <div class="wardrobe-item-card">
+            <img src="/assets/collection_lehenga-DMOOf1Rh.jpg" alt="Bridal Lehenga" class="wardrobe-item-img">
+            <div class="wardrobe-item-meta">
+              <span class="cat-pill">Bridal Heritage</span>
+              <h4>Royal Crimson Bridal Lehenga</h4>
+              <button class="btn-micro" data-try-outfit="royal-bridal-lehenga">Try On In Studio</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================== -->
+    <!-- 8. AI FASHION PHOTOSHOOT STUDIO -->
+    <!-- ======================================================== -->
+    <section class="page-section" id="pagePhotoshoot">
+      <div class="section-header-centered">
+        <span class="section-eyebrow">EDITORIAL PRODUCTION</span>
+        <h1 class="section-heading">AI Fashion Photoshoot</h1>
+        <p class="section-subheading">Place your photograph into architectural luxury backgrounds with cinematic lighting and magazine atmosphere.</p>
+      </div>
+
+      <div class="photoshoot-studio-grid">
+        
+        <!-- Background Options Left -->
+        <div class="photoshoot-controls-card">
+          <h3>Select Shoot Environment</h3>
+
+          <div class="photoshoot-bg-grid" id="photoshootBgSelector">
+            <button type="button" class="bg-option-btn active" data-bg="palace">
+              <img src="/assets/bg_royal_palace-DpIfs6kO.jpg" alt="Royal Palace" class="bg-option-thumb">
+              <span>Royal French Palace</span>
+            </button>
+            <button type="button" class="bg-option-btn" data-bg="garden">
+              <img src="/assets/bg_floral_garden-BmeYfICb.jpg" alt="Floral Garden" class="bg-option-thumb">
+              <span>Parisian Rose Garden</span>
+            </button>
+            <button type="button" class="bg-option-btn" data-bg="studio">
+              <img src="/assets/tryon_result_pink_couture-B1ivgbG8.jpg" alt="Minimal Studio" class="bg-option-thumb">
+              <span>Obsidian Cyclorama Studio</span>
+            </button>
+            <button type="button" class="bg-option-btn" data-bg="runway">
+              <img src="/assets/tryon_result_pink_saree-DxsgNH0Y.jpg" alt="Runway Catwalk" class="bg-option-thumb">
+              <span>Milano Fashion Week Catwalk</span>
+            </button>
+          </div>
+
+          <div class="form-group" style="margin-top: 20px;">
+            <label class="custom-label">Photography Style</label>
+            <select id="photoshootStyleMode" class="custom-select">
+              <option value="editorial">Fashion Magazine Editorial (Soft Strobe)</option>
+              <option value="portrait">Close-up Beauty Portrait</option>
+              <option value="fullbody">Full-Body High-Fashion Campaign</option>
+              <option value="cinematic">Cinematic Golden Hour</option>
+            </select>
+          </div>
+
+          <button type="button" class="btn-luxury-gold btn-full" id="btnExecutePhotoshoot">
+            📸 Generate AI Editorial Photoshoot
+          </button>
+        </div>
+
+        <!-- Photoshoot Output Right -->
+        <div class="photoshoot-display-card">
+          <div class="photoshoot-frame" id="photoshootFrame">
+            <img src="/assets/bg_royal_palace-DpIfs6kO.jpg" alt="Photoshoot Result" id="photoshootResultImg" class="photoshoot-img">
+            <div class="photoshoot-watermark">
+              <span>VOGUE AI PARIS • HAUTE COUTURE SPECIAL ISSUE</span>
+            </div>
+          </div>
+          <div class="photoshoot-footer">
+            <button type="button" class="btn-action-gold" id="btnDownloadPhotoshoot">
+              ⬇ Download High-Resolution Editorial Shoot
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================== -->
+    <!-- 9. MY FASHION MAGAZINE (Cover Maker) -->
+    <!-- ======================================================== -->
+    <section class="page-section" id="pageMagazine">
+      <div class="section-header-centered">
+        <span class="section-eyebrow">COVER STAR ATELIER</span>
+        <h1 class="section-heading">My Fashion Magazine</h1>
+        <p class="section-subheading">Turn your virtual try-on photograph into a genuine high-fashion editorial magazine cover.</p>
+      </div>
+
+      <div class="magazine-editor-grid">
+        
+        <!-- Controls Left -->
+        <div class="magazine-controls-panel">
+          <h3>Editorial Typography & Headlines</h3>
+
+          <div class="form-group">
+            <label class="custom-label">Magazine Brand Title</label>
+            <input type="text" id="magTitleInput" value="VOGUE AI" class="modal-input-compact">
+          </div>
+
+          <div class="form-group">
+            <label class="custom-label">Issue Date / Edition</label>
+            <input type="text" id="magIssueInput" value="PARIS • WINTER HAUTE COUTURE SPECIAL ISSUE" class="modal-input-compact">
+          </div>
+
+          <div class="form-group">
+            <label class="custom-label">Lead Headline</label>
+            <input type="text" id="magHeadlineInput" value="HAUTE COUTURE REVOLUTION" class="modal-input-compact">
+          </div>
+
+          <div class="form-group">
+            <label class="custom-label">Sub-Headline Story</label>
+            <input type="text" id="magSubheadInput" value="Real Identity, Timeless Silk Sarees & Celestial Gowns" class="modal-input-compact">
+          </div>
+
+          <button type="button" class="btn-luxury-gold btn-full" id="btnUpdateMagazineCover">
+            📰 Refresh Magazine Cover
+          </button>
+          <button type="button" class="btn-luxury-outline btn-full" id="btnDownloadMagazineCover" style="margin-top: 10px;">
+            ⬇ Download Magazine Cover
+          </button>
+        </div>
+
+        <!-- Cover Preview Right -->
+        <div class="magazine-preview-panel">
+          <div class="magazine-cover-frame" id="magazineCover">
+            <img src="/assets/tryon_result_pink_saree-DxsgNH0Y.jpg" alt="Cover Photo" id="magazineCoverPhoto" class="mag-bg-photo">
+            
+            <!-- Magazine Layout Overlays -->
+            <div class="mag-masthead" id="magMasthead">VOGUE <span>AI</span></div>
+            <div class="mag-edition" id="magEditionDisplay">PARIS • WINTER HAUTE COUTURE SPECIAL ISSUE</div>
+            
+            <div class="mag-headlines-wrap">
+              <div class="mag-lead-headline" id="magLeadHeadlineDisplay">HAUTE COUTURE REVOLUTION</div>
+              <div class="mag-sub-headline" id="magSubHeadlineDisplay">Real Identity, Timeless Silk Sarees & Celestial Gowns</div>
+              <div class="mag-barcode-row">
+                <span class="mag-pill-badge">EXCLUSIVE ISSUE</span>
+                <span class="mag-price">PARIS €12 • MILANO €14</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================== -->
+    <!-- 10. FASHION MOODBOARD -->
+    <!-- ======================================================== -->
+    <section class="page-section" id="pageMoodboard">
+      <div class="section-header-centered">
+        <span class="section-eyebrow">CREATIVE INSPIRATION</span>
+        <h1 class="section-heading">Fashion Moodboard</h1>
+        <p class="section-subheading">Curate personal inspiration collages of favorite garments, color swatches, jewelry, and textures.</p>
+      </div>
+
+      <div class="moodboard-canvas">
+        <div class="moodboard-grid">
+          
+          <div class="mood-item item-large">
+            <img src="/assets/pink_fantasy_couture-BWWzWtBp.jpg" alt="Mood 1">
+            <span class="mood-caption">Celestial Tulle & Wings</span>
+          </div>
+
+          <div class="mood-item item-swatch" style="background: linear-gradient(135deg, #e898aa, #d4af37);">
+            <div class="swatch-content">
+              <strong>Signature Palette</strong>
+              <small>Blush Rose & Antique Gold</small>
+            </div>
+          </div>
+
+          <div class="mood-item item-medium">
+            <img src="/assets/pink_saree_reference-BdnjjB-B.jpg" alt="Mood 2">
+            <span class="mood-caption">Royal Handwoven Silk</span>
+          </div>
+
+          <div class="mood-item item-medium">
+            <img src="/assets/bg_royal_palace-DpIfs6kO.jpg" alt="Mood 3">
+            <span class="mood-caption">Palace Hall Architecture</span>
+          </div>
+
+          <div class="mood-item item-large">
+            <img src="/assets/tryon_result_pink_saree-DxsgNH0Y.jpg" alt="Mood 4">
+            <span class="mood-caption">Verified Drape Synthesis</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================== -->
+    <!-- 11. OUTFIT BATTLE (Fashion Duel) -->
+    <!-- ======================================================== -->
+    <section class="page-section" id="pageOutfitBattle">
+      <div class="section-header-centered">
+        <span class="section-eyebrow">FASHION DUEL</span>
+        <h1 class="section-heading">Outfit Battle</h1>
+        <p class="section-subheading">Compare two contrasting aesthetics on your photograph side-by-side. Vote and save the ultimate winner.</p>
+      </div>
+
+      <div class="battle-arena">
+        
+        <!-- Fighter A -->
+        <div class="battle-card">
+          <div class="battle-badge">LOOK A • TRADITIONAL</div>
+          <div class="battle-img-frame">
+            <img src="/assets/tryon_result_pink_saree-DxsgNH0Y.jpg" alt="Look A" class="battle-img">
+          </div>
+          <div class="battle-details">
+            <h3>Blush Rose Silk Saree</h3>
+            <p>Harmonic Balance: 98.6% • Occasion: Royal Heritage Gala</p>
+            <button type="button" class="btn-luxury-gold btn-full btn-vote-battle" data-winner="Look A">
+              🏆 Vote Look A as Winner
+            </button>
+          </div>
+        </div>
+
+        <div class="battle-vs-badge">VS</div>
+
+        <!-- Fighter B -->
+        <div class="battle-card">
+          <div class="battle-badge">LOOK B • FANTASY COUTURE</div>
+          <div class="battle-img-frame">
+            <img src="/assets/tryon_result_pink_couture-B1ivgbG8.jpg" alt="Look B" class="battle-img">
+          </div>
+          <div class="battle-details">
+            <h3>Celestial Rose Fantasy Gown</h3>
+            <p>Harmonic Balance: 97.9% • Occasion: Paris Runway Night</p>
+            <button type="button" class="btn-luxury-gold btn-full btn-vote-battle" data-winner="Look B">
+              🏆 Vote Look B as Winner
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================== -->
+    <!-- 12. WEEKLY OUTFIT PLANNER -->
+    <!-- ======================================================== -->
+    <section class="page-section" id="pageOutfitPlanner">
+      <div class="section-header-centered">
+        <span class="section-eyebrow">7-DAY STYLE CALENDAR</span>
+        <h1 class="section-heading">Weekly Outfit Planner</h1>
+        <p class="section-subheading">Plan and schedule your bespoke luxury outfits from Monday to Sunday for office, date nights, and galas.</p>
+      </div>
+
+      <div class="weekly-planner-grid">
+        
+        <div class="day-card">
+          <span class="day-name">MONDAY</span>
+          <span class="day-occ">Executive Office</span>
+          <img src="/assets/collection_modern_blazer-C4g95JsE.jpg" alt="Monday" class="day-thumb">
+          <strong>Ivory Silk Blazer</strong>
+        </div>
+
+        <div class="day-card">
+          <span class="day-name">TUESDAY</span>
+          <span class="day-occ">Atelier Presentation</span>
+          <img src="/assets/collection_luxury_gown-CBehD_-B.jpg" alt="Tuesday" class="day-thumb">
+          <strong>Emerald Crepe Gown</strong>
+        </div>
+
+        <div class="day-card">
+          <span class="day-name">WEDNESDAY</span>
+          <span class="day-occ">Cultural Heritage</span>
+          <img src="/assets/collection_anarkali-DgwOJF21.jpg" alt="Wednesday" class="day-thumb">
+          <strong>Emerald Anarkali</strong>
+        </div>
+
+        <div class="day-card">
+          <span class="day-name">THURSDAY</span>
+          <span class="day-occ">Cocktail Soirée</span>
+          <img src="/assets/collection_starlight_gown-ZvmD_IIf.jpg" alt="Thursday" class="day-thumb">
+          <strong>Starlight Crystal Gown</strong>
+        </div>
+
+        <div class="day-card">
+          <span class="day-name">FRIDAY</span>
+          <span class="day-occ">Weekend Premiere</span>
+          <img src="/assets/pink_fantasy_couture-BWWzWtBp.jpg" alt="Friday" class="day-thumb">
+          <strong>Celestial Rose Gown</strong>
+        </div>
+
+        <div class="day-card">
+          <span class="day-name">SATURDAY</span>
+          <span class="day-occ">Royal Wedding Reception</span>
+          <img src="/assets/collection_lehenga-DMOOf1Rh.jpg" alt="Saturday" class="day-thumb">
+          <strong>Bridal Crimson Lehenga</strong>
+        </div>
+
+        <div class="day-card">
+          <span class="day-name">SUNDAY</span>
+          <span class="day-occ">Family Celebration</span>
+          <img src="/assets/pink_saree_reference-BdnjjB-B.jpg" alt="Sunday" class="day-thumb">
+          <strong>Blush Rose Saree</strong>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================== -->
+    <!-- 13. STYLE COMMUNITY (Inspiration) -->
+    <!-- ======================================================== -->
+    <section class="page-section" id="pageCommunity">
+      <div class="section-header-centered">
+        <span class="section-eyebrow">COMMUNITY ATELIER</span>
+        <h1 class="section-heading">Style Community</h1>
+        <p class="section-subheading">Explore trending AI fashion looks shared by the community. Privacy first: User photos are only shared with explicit consent.</p>
+      </div>
+
+      <div class="community-grid">
+        
+        <div class="community-card">
+          <img src="/assets/tryon_result_pink_saree-DxsgNH0Y.jpg" alt="Community 1" class="community-img">
+          <div class="community-card-body">
+            <span class="community-user">@Aria_Paris</span>
+            <h4>Blush Rose Saree on Milan Catwalk</h4>
+            <div class="community-likes">
+              <span>❤️ 1,420 Likes</span>
+              <button class="btn-micro" data-try-outfit="pink-saree-traditional">Try This Look</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="community-card">
+          <img src="/assets/tryon_result_pink_couture-B1ivgbG8.jpg" alt="Community 2" class="community-img">
+          <div class="community-card-body">
+            <span class="community-user">@Julian_Milano</span>
+            <h4>Celestial Fantasy Gown at Versailles</h4>
+            <div class="community-likes">
+              <span>❤️ 2,890 Likes</span>
+              <button class="btn-micro" data-try-outfit="pink-fantasy-couture">Try This Look</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================== -->
+    <!-- 14. MY LOOKS DASHBOARD -->
+    <!-- ======================================================== -->
+    <section class="page-section" id="pageMyLooks">
+      <div class="section-header-centered">
+        <span class="section-eyebrow">PERSONAL ARCHIVE</span>
+        <h1 class="section-heading">My Looks Dashboard</h1>
+        <p class="section-subheading">Your personal digital vault of saved try-on photographs, photoshoot captures, magazine covers, and favorite outfits.</p>
+      </div>
+
+      <div class="wardrobe-container">
+        <div class="wardrobe-empty" id="wardrobeEmptyState">
+          <div class="empty-icon-box">🤍</div>
+          <h3>No Looks Saved Yet</h3>
+          <p>Try on any outfit in the Virtual Try-On Studio and click "Save Look to My Wardrobe".</p>
+          <button class="btn-primary-cta" data-page="tryon">Go to Virtual Try-On Studio</button>
+        </div>
+
+        <div class="wardrobe-grid" id="wardrobeGrid">
+          <!-- Populated dynamically via script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================== -->
+    <!-- 15. FASHION COLLECTION CATALOG -->
     <!-- ======================================================== -->
     <section class="page-section" id="pageCollection">
       <div class="collection-page-header">
         <span class="section-eyebrow">HAUTE COUTURE ARCHIVE</span>
         <h1 class="section-heading">Bespoke Virtual Wardrobe</h1>
-        <p class="section-subheading">Browse our curated collections of traditional heritage garments, celestial fantasy couture, and modern editorial pieces.</p>
-        
-        <!-- Filter Bar -->
-        <div class="collection-tabs-bar" id="catalogFilterBar">
-          <button class="catalog-tab active" data-filter="all">All Outfits</button>
-          <button class="catalog-tab" data-filter="traditional">Traditional Collection</button>
-          <button class="catalog-tab" data-filter="fantasy">Fantasy Couture</button>
-          <button class="catalog-tab" data-filter="modern">Modern Fashion</button>
-        </div>
+        <p class="section-subheading">Browse our complete collections of Traditional Sarees & Lehengas, Fantasy Gowns, and Western Runway Tailoring.</p>
       </div>
 
-      <!-- Catalog Grid of Outfits -->
       <div class="catalog-grid" id="catalogGrid">
-        
-        <!-- Collection 1: Pink Saree (Reference 1) -->
-        <div class="catalog-card" data-cat="traditional">
-          <div class="catalog-image-box">
-            <img src="/assets/pink_saree_reference-BdnjjB-B.jpg" alt="Blush Rose Silk Saree" class="catalog-img">
-            <span class="catalog-tag">TRADITIONAL REFERENCE</span>
-          </div>
-          <div class="catalog-info">
-            <span class="catalog-edition">AUTUMN/SPRING ATELIER</span>
-            <h3>Blush Rose Handwoven Silk Saree</h3>
-            <p>Inspired by classical Indian royal craftsmanship, featuring fine gold zari floral vine borders, delicate bootis, and an embellished high-neck blouse.</p>
-            <div class="catalog-tags-row">
-              <span class="badge-tag">Pure Silk</span>
-              <span class="badge-tag">Zari Gold</span>
-              <span class="badge-tag">Heritage</span>
-            </div>
-            <button class="btn-catalog-try" data-try-outfit="pink-saree-traditional">Try On In Studio →</button>
-          </div>
-        </div>
-
-        <!-- Collection 2: Pink Fantasy Couture (Reference 2) -->
-        <div class="catalog-card" data-cat="fantasy">
-          <div class="catalog-image-box">
-            <img src="/assets/pink_fantasy_couture-BWWzWtBp.jpg" alt="Celestial Rose Fantasy Gown" class="catalog-img">
-            <span class="catalog-tag">FANTASY COUTURE</span>
-          </div>
-          <div class="catalog-info">
-            <span class="catalog-edition">PARIS FANTASY RUNWAY</span>
-            <h3>Celestial Rose Tulle Fantasy Gown</h3>
-            <p>Layered tiered tulle ballgown with crystal corset boning, golden leaf sequins, trailing sheer angel-wing sleeves, and majestic bridal tiara.</p>
-            <div class="catalog-tags-row">
-              <span class="badge-tag">French Tulle</span>
-              <span class="badge-tag">Gold Sequins</span>
-              <span class="badge-tag">Wing Sleeves</span>
-            </div>
-            <button class="btn-catalog-try" data-try-outfit="pink-fantasy-couture">Try On In Studio →</button>
-          </div>
-        </div>
-
-        <!-- Collection 3: Royal Bridal Lehenga -->
-        <div class="catalog-card" data-cat="traditional">
-          <div class="catalog-image-box">
-            <img src="/assets/collection_lehenga-DMOOf1Rh.jpg" alt="Royal Crimson Bridal Lehenga" class="catalog-img">
-            <span class="catalog-tag">BRIDAL HERITAGE</span>
-          </div>
-          <div class="catalog-info">
-            <span class="catalog-edition">ROYAL BRIDAL COLLECTION</span>
-            <h3>Royal Crimson Bridal Lehenga</h3>
-            <p>Intricate kalidar skirt crafted from crimson raw silk, adorned with geometric gota patti embroidery, paired with a matching embroidered choli and net dupatta.</p>
-            <div class="catalog-tags-row">
-              <span class="badge-tag">Raw Silk</span>
-              <span class="badge-tag">Gota Patti</span>
-              <span class="badge-tag">Hand Embroidered</span>
-            </div>
-            <button class="btn-catalog-try" data-try-outfit="royal-bridal-lehenga">Try On In Studio →</button>
-          </div>
-        </div>
-
-        <!-- Collection 4: Starlight Crystal Ballgown -->
-        <div class="catalog-card" data-cat="fantasy">
-          <div class="catalog-image-box">
-            <img src="/assets/collection_starlight_gown-ZvmD_IIf.jpg" alt="Starlight Crystal Ballgown" class="catalog-img">
-            <span class="catalog-tag">CELESTIAL COUTURE</span>
-          </div>
-          <div class="catalog-info">
-            <span class="catalog-edition">ETHEREAL MILANO</span>
-            <h3>Starlight Crystal Celestial Ballgown</h3>
-            <p>Sheer organza woven with radiant starburst crystal embroideries, dramatic cape sleeves, and a sculpted celestial silhouette.</p>
-            <div class="catalog-tags-row">
-              <span class="badge-tag">Star Crystals</span>
-              <span class="badge-tag">Cape Sleeves</span>
-              <span class="badge-tag">Haute Couture</span>
-            </div>
-            <button class="btn-catalog-try" data-try-outfit="starlight-princess-gown">Try On In Studio →</button>
-          </div>
-        </div>
-
-        <!-- Collection 5: Emerald Imperial Anarkali -->
-        <div class="catalog-card" data-cat="traditional">
-          <div class="catalog-image-box">
-            <img src="/assets/collection_anarkali-DgwOJF21.jpg" alt="Emerald Imperial Anarkali" class="catalog-img">
-            <span class="catalog-tag">TRADITIONAL SUIT</span>
-          </div>
-          <div class="catalog-info">
-            <span class="catalog-edition">ROYAL ATELIER</span>
-            <h3>Emerald Imperial Anarkali Suit</h3>
-            <p>Flared floor-length georgette silhouette in deep forest emerald with antiqued gold embroidery and embellished sheer dupatta.</p>
-            <div class="catalog-tags-row">
-              <span class="badge-tag">Pure Georgette</span>
-              <span class="badge-tag">Zardozi</span>
-              <span class="badge-tag">Imperial Green</span>
-            </div>
-            <button class="btn-catalog-try" data-try-outfit="royal-emerald-anarkali">Try On In Studio →</button>
-          </div>
-        </div>
-
-        <!-- Collection 6: Tailored Ivory Blazer -->
-        <div class="catalog-card" data-cat="modern">
-          <div class="catalog-image-box">
-            <img src="/assets/collection_modern_blazer-C4g95JsE.jpg" alt="Tailored Ivory Blazer" class="catalog-img">
-            <span class="catalog-tag">MODERN LUXURY</span>
-          </div>
-          <div class="catalog-info">
-            <span class="catalog-edition">READY-TO-WEAR ATELIER</span>
-            <h3>Tailored Ivory Silk Blazer Ensemble</h3>
-            <p>Precision-tailored double-breasted ivory blazer with satin-faced peak lapels, styled with fluid wide-leg crepe trousers.</p>
-            <div class="catalog-tags-row">
-              <span class="badge-tag">Italian Wool</span>
-              <span class="badge-tag">Silk Satin</span>
-              <span class="badge-tag">Power Dressing</span>
-            </div>
-            <button class="btn-catalog-try" data-try-outfit="tailored-ivory-blazer">Try On In Studio →</button>
-          </div>
-        </div>
-
-        <!-- Collection 7: Emerald Evening Gown -->
-        <div class="catalog-card" data-cat="modern">
-          <div class="catalog-image-box">
-            <img src="/assets/collection_luxury_gown-CBehD_-B.jpg" alt="Emerald Silk Crepe Evening Gown" class="catalog-img">
-            <span class="catalog-tag">RED CARPET GALA</span>
-          </div>
-          <div class="catalog-info">
-            <span class="catalog-edition">MONACO GALA COLLECTION</span>
-            <h3>Emerald Silk Crepe Evening Gown</h3>
-            <p>Sculptural bias-cut evening gown with liquid silk drape, delicate shoulder capelet, and dramatic floor-length silhouette.</p>
-            <div class="catalog-tags-row">
-              <span class="badge-tag">Silk Crepe</span>
-              <span class="badge-tag">Bias Cut</span>
-              <span class="badge-tag">Red Carpet</span>
-            </div>
-            <button class="btn-catalog-try" data-try-outfit="emerald-luxury-gown">Try On In Studio →</button>
-          </div>
-        </div>
-
+        <!-- Rendered dynamically via JS -->
       </div>
     </section>
 
     <!-- ======================================================== -->
-    <!-- 4. AI FASHION STYLIST SECTION -->
+    <!-- 16. AI FASHION STYLIST -->
     <!-- ======================================================== -->
     <section class="page-section" id="pageStylist">
       <div class="stylist-container">
-        
         <div class="stylist-header">
           <span class="section-eyebrow">INTELLIGENT FASHION ADVISOR</span>
           <h1 class="section-heading">AI Fashion Stylist</h1>
-          <p class="section-subheading">Describe your occasion, preferred aesthetic, and color palette. Our AI Stylist curates bespoke looks and automatically prepares them for virtual try-on on your photograph.</p>
+          <p class="section-subheading">Personal styling consultation for royal weddings, galas, office power dressing, and casual chic.</p>
         </div>
 
         <div class="stylist-grid">
-          
-          <!-- Stylist Consultation Form -->
           <div class="stylist-form-card">
             <h3>Consultation Preferences</h3>
 
@@ -831,9 +1628,8 @@
               <select id="stylistOccasion" class="stylist-select">
                 <option value="gala">Royal Gala & Red Carpet</option>
                 <option value="wedding">Traditional Heritage Wedding</option>
-                <option value="cocktail">High-Society Cocktail Soirée</option>
+                <option value="cocktail">Cocktail Soirée</option>
                 <option value="editorial">Fashion Photography Editorial</option>
-                <option value="reception">Evening Wedding Reception</option>
                 <option value="corporate">Executive Fashion & Business Summit</option>
               </select>
             </div>
@@ -861,21 +1657,13 @@
                 </button>
                 <button type="button" class="color-pref-btn" data-color-pref="Obsidian & Ivory">
                   <span class="dot-swatch" style="background: #18181b;"></span>
-                  <span>Obsidian Noir & Ivory</span>
+                  <span>Obsidian & Ivory</span>
                 </button>
-                <button type="button" class="color-pref-btn" data-color-pref="Crimson Regal">
+                <button type="button" class="color-pref-btn" data-color-pref="Royal Crimson">
                   <span class="dot-swatch" style="background: #7f1d1d;"></span>
                   <span>Royal Crimson</span>
                 </button>
               </div>
-            </div>
-
-            <div class="form-group">
-              <label class="form-label">Seasonal Mood</label>
-              <select id="stylistSeason" class="stylist-select">
-                <option value="spring-summer">Spring / Summer Haute Couture</option>
-                <option value="autumn-winter">Autumn / Winter Atelier</option>
-              </select>
             </div>
 
             <button type="button" class="btn-generate-style" id="btnRunStylist">
@@ -883,132 +1671,23 @@
             </button>
           </div>
 
-          <!-- Stylist Recommendation Result Card -->
           <div class="stylist-result-card" id="stylistResultCard">
             <div class="result-badge">AI COUTURE ADVISORY</div>
-            
             <div class="stylist-outfit-preview">
               <img src="/assets/pink_saree_reference-BdnjjB-B.jpg" alt="Recommended Outfit" id="stylistRecImg" class="stylist-rec-img">
               <div class="stylist-rec-overlay">
                 <span class="harmony-score">✦ 98.6% Harmonic Score</span>
               </div>
             </div>
-
             <div class="stylist-rec-details">
               <span class="rec-category" id="stylistRecCategory">TRADITIONAL HERITAGE GALA</span>
-              <h3 class="rec-title" id="stylistRecTitle">Blush Rose Silk Saree with Antique Gold Accents</h3>
-              
+              <h3 class="rec-title" id="stylistRecTitle">Blush Rose Silk Saree with Antique Gold</h3>
               <p class="rec-rationale" id="stylistRecRationale">
                 "For a royal celebration, the blush rose silk organza offers an unmatched balance of timeless heritage and soft modern romanticism. Paired with fine antique zari embroidery, it flatters natural skin undertones and provides a regal, photorealistic drape."
               </p>
-
-              <div class="stylist-spec-list">
-                <div class="spec-row">
-                  <span class="spec-name">Recommended Fabric:</span>
-                  <span class="spec-value" id="stylistRecFabric">Pure Handwoven Silk Organza</span>
-                </div>
-                <div class="spec-row">
-                  <span class="spec-name">Jewellery Pairing:</span>
-                  <span class="spec-value" id="stylistRecJewels">Kundan Choker & Pearl Maang Tikka</span>
-                </div>
-                <div class="spec-row">
-                  <span class="spec-name">Footwear:</span>
-                  <span class="spec-value" id="stylistRecFootwear">Embroidered Champagne Mules</span>
-                </div>
-              </div>
-
               <button type="button" class="btn-try-stylist-look" id="btnTryStylistLook">
-                <span>✨ Try On This Recommended Look on Your Photo →</span>
+                <span>✨ Try On Recommended Look on Your Photo →</span>
               </button>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ======================================================== -->
-    <!-- 5. MY LOOKS (Saved Outfits & Wardrobe) -->
-    <!-- ======================================================== -->
-    <section class="page-section" id="pageWardrobe">
-      <div class="wardrobe-page-header">
-        <span class="section-eyebrow">YOUR DIGITAL CLOSET</span>
-        <h1 class="section-heading">My Saved Looks</h1>
-        <p class="section-subheading">Review, compare, and download your personalized AI virtual try-on photographs.</p>
-      </div>
-
-      <div class="wardrobe-container">
-        
-        <!-- Empty State -->
-        <div class="wardrobe-empty" id="wardrobeEmptyState">
-          <div class="empty-icon-box">🤍</div>
-          <h3>No Looks Saved Yet</h3>
-          <p>Go to the Virtual Try-On studio, upload your photograph, try on any luxury outfit, and click "Save Look to My Wardrobe".</p>
-          <button class="btn-primary-cta" data-page="tryon" id="btnEmptyStateCta">Go to Virtual Try-On Studio</button>
-        </div>
-
-        <!-- Saved Looks Grid -->
-        <div class="wardrobe-grid" id="wardrobeGrid">
-          <!-- Populated dynamically via JS -->
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ======================================================== -->
-    <!-- 6. ABOUT & AI TECHNOLOGY ARCHITECTURE -->
-    <!-- ======================================================== -->
-    <section class="page-section" id="pageAbout">
-      <div class="about-container">
-        <div class="about-header">
-          <span class="section-eyebrow">INNOVATION & INTEGRITY</span>
-          <h1 class="section-heading">The Science of Photorealistic AI Try-On</h1>
-          <p class="section-subheading">How VOGUE AI achieves high-fashion cloth transfer while fiercely preserving human identity.</p>
-        </div>
-
-        <div class="about-grid">
-          <div class="about-card">
-            <span class="about-icon">🛡️</span>
-            <h3>Face & Identity Preservation</h3>
-            <p>
-              Unlike generative systems that replace the entire subject with a generic avatar, our architecture isolates the face, hair texture, natural skin tones, and facial expressions using high-dimensional facial landmark masks.
-            </p>
-          </div>
-
-          <div class="about-card">
-            <span class="about-icon">📐</span>
-            <h3>Neural Garment Warping (IDM-VTON)</h3>
-            <p>
-              Garments are dynamically deformed and aligned to match the user's natural body posture, shoulder angle, and movement lines. Realistic fabric folding, creasing, and lighting shadows are synthesized naturally.
-            </p>
-          </div>
-
-          <div class="about-card">
-            <span class="about-icon">🔒</span>
-            <h3>Privacy & Data Protection</h3>
-            <p>
-              Your uploaded photographs are strictly processed for your personal virtual try-on session. They are never shared publicly or added to public training pools. You have full control to delete your photos at any time.
-            </p>
-          </div>
-        </div>
-
-        <!-- Reference Image Showcase -->
-        <div class="about-references-box">
-          <h3>Inspiration Behind Our Initial Collections</h3>
-          <p>
-            VOGUE AI was designed around two signature reference aesthetics: the royal heritage <strong>Blush Rose Silk Saree</strong> and the ethereal Paris runway <strong>Celestial Fantasy Gown</strong>.
-          </p>
-
-          <div class="dual-reference-preview">
-            <div class="ref-item">
-              <img src="/assets/pink_saree_reference-BdnjjB-B.jpg" alt="Pink Saree Reference">
-              <span>Reference 01: Traditional Handwoven Saree</span>
-            </div>
-            <div class="ref-item">
-              <img src="/assets/pink_fantasy_couture-BWWzWtBp.jpg" alt="Pink Fantasy Gown Reference">
-              <span>Reference 02: Celestial Fantasy Couture Gown</span>
             </div>
           </div>
         </div>
@@ -1018,52 +1697,81 @@
   </main>
 
   <!-- ======================================================== -->
-  <!-- MODAL: AI Try-On Provider & API Key Configuration -->
+  <!-- FLOATING CONVERSATIONAL AI FASHION ASSISTANT DRAWER -->
+  <!-- ======================================================== -->
+  <div class="assistant-drawer hidden" id="assistantDrawer">
+    <div class="assistant-header">
+      <div class="assistant-title-row">
+        <span class="assistant-avatar">✦</span>
+        <div>
+          <h4>VOGUE AI Stylist Assistant</h4>
+          <small>Ask questions, get outfit ideas, style advice</small>
+        </div>
+      </div>
+      <button type="button" class="btn-close-assistant" id="btnCloseAssistant">✕</button>
+    </div>
+
+    <div class="assistant-messages" id="assistantMessages">
+      <div class="assistant-msg bot">
+        <p>Hello! I am your personal VOGUE AI Fashion Assistant. Ask me anything like:</p>
+        <div class="quick-prompts">
+          <button class="quick-prompt-btn" data-query="Suggest a traditional wedding look">Suggest a traditional wedding look</button>
+          <button class="quick-prompt-btn" data-query="Show me the pink fantasy gown">Show me the pink fantasy gown</button>
+          <button class="quick-prompt-btn" data-query="What matches with the pink saree?">What matches with the pink saree?</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="assistant-input-row">
+      <input type="text" id="assistantInput" placeholder="Ask your stylist..." class="assistant-input">
+      <button type="button" class="btn-assistant-send" id="btnAssistantSend">Send</button>
+    </div>
+  </div>
+
+  <!-- ======================================================== -->
+  <!-- MODAL: AI Try-On Provider Settings -->
   <!-- ======================================================== -->
   <div class="modal-overlay hidden" id="configModalOverlay">
     <div class="modal-window">
       <div class="modal-header">
         <div>
-          <span class="modal-eyebrow">INTEGRATION SETTINGS</span>
-          <h3 class="modal-title">AI Virtual Try-On Engine</h3>
+          <span class="modal-eyebrow">AI ENGINE CONFIGURATION</span>
+          <h3 class="modal-title">Try-On & Transformation Engine</h3>
         </div>
         <button type="button" class="modal-close-btn" id="btnCloseConfigModal">✕</button>
       </div>
 
       <div class="modal-body">
         <p class="modal-desc">
-          Configure real photorealistic virtual try-on models. API keys are safely maintained on your local backend server and never exposed to the client.
+          Configure external virtual try-on providers (Replicate IDM-VTON, FASHN AI, Google Gemini). API keys remain private on your backend server.
         </p>
 
-        <div class="provider-select-group">
-          <label class="modal-label">Active Try-On Provider</label>
-          <div class="provider-radio-cards" id="providerRadioGroup">
-            <label class="provider-card active">
-              <input type="radio" name="providerRadio" value="replicate" checked>
-              <span class="provider-name">Replicate IDM-VTON</span>
-              <span class="provider-desc">State-of-the-art cloth transfer & identity preservation</span>
-            </label>
-            <label class="provider-card">
-              <input type="radio" name="providerRadio" value="fashn">
-              <span class="provider-name">FASHN AI API</span>
-              <span class="provider-desc">High-fashion specialized virtual dressing API</span>
-            </label>
-            <label class="provider-card">
-              <input type="radio" name="providerRadio" value="gemini">
-              <span class="provider-name">Google Gemini Vision AI</span>
-              <span class="provider-desc">Multimodal fashion styling & analysis</span>
-            </label>
-          </div>
+        <div class="provider-radio-cards" id="providerRadioGroup">
+          <label class="provider-card active">
+            <input type="radio" name="providerRadio" value="replicate" checked>
+            <span class="provider-name">Replicate IDM-VTON</span>
+            <span class="provider-desc">State-of-the-art cloth transfer & identity preservation</span>
+          </label>
+          <label class="provider-card">
+            <input type="radio" name="providerRadio" value="fashn">
+            <span class="provider-name">FASHN AI API</span>
+            <span class="provider-desc">High-fashion specialized virtual dressing API</span>
+          </label>
+          <label class="provider-card">
+            <input type="radio" name="providerRadio" value="gemini">
+            <span class="provider-name">Google Gemini Vision AI</span>
+            <span class="provider-desc">Multimodal fashion styling & analysis</span>
+          </label>
         </div>
 
         <div class="api-key-group">
-          <label class="modal-label" id="apiKeyInputLabel">API Token / Secret Key</label>
+          <label class="modal-label">API Token / Secret Key</label>
           <div class="input-password-row">
             <input type="password" id="inputApiKey" placeholder="Enter API Key (e.g. r8_...)" class="modal-input">
             <button type="button" class="btn-toggle-eye" id="btnToggleApiKeyEye">👁</button>
           </div>
           <small class="modal-note">
-            When running in demonstration mode, verified sample try-on pairings for the pink saree and fantasy gown render instantly with full identity metrics.
+            When running in demonstration mode, verified sample try-on pairings for the pink saree and fantasy gown render instantly with 100% identity preservation.
           </small>
         </div>
 
@@ -1077,7 +1785,7 @@
     </div>
   </div>
 
-  <!-- Fullscreen Image Lightbox Modal -->
+  <!-- Fullscreen Lightbox Modal -->
   <div class="lightbox-overlay hidden" id="lightboxModal">
     <button type="button" class="lightbox-close-btn" id="btnCloseLightbox">✕ Close</button>
     <div class="lightbox-content">
@@ -1086,6 +1794,6 @@
     </div>
   </div>
 
-  <!-- Pure 2D High-Fashion Application Logic (No Three.js) -->
+  <!-- Main JavaScript Controller -->
 </body>
 </html>
